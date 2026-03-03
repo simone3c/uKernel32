@@ -1,0 +1,146 @@
+
+Discarded input sections
+
+ .group         0x00000000        0x8 /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .group         0x00000000        0x8 /tmp/ccNwHypB.o
+ .group         0x00000000        0x8 /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .group         0x00000000        0xc /tmp/ccNwHypB.o
+ .text          0x00000000        0x0 /tmp/ccNwHypB.o
+ .data          0x00000000        0x0 /tmp/ccNwHypB.o
+ .bss           0x00000000        0x0 /tmp/ccNwHypB.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00080000         xr
+sram             0x20000000         0x00017000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /tmp/ccNwHypB.o
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v7e-m+fp/hard/libgcc.a
+                0x20017000                        _estack = (ORIGIN (sram) + LENGTH (sram))
+
+.vectors        0x08000000      0x1ac
+ *(.vectors)
+ .vectors       0x08000000      0x1ac /tmp/ccNwHypB.o
+
+.text           0x080001ac      0x268
+ *(.text*)
+ .text._ZN4uHAL4GPIOC2EhNS0_4PORTENS0_4MODEENS0_5OTYPEENS0_6OSPEEDENS0_4PUPDE
+                0x080001ac       0x4a /tmp/ccNwHypB.o
+                0x080001ac                uHAL::GPIO::GPIO(unsigned char, uHAL::GPIO::PORT, uHAL::GPIO::MODE, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED, uHAL::GPIO::PUPD)
+                0x080001ac                uHAL::GPIO::GPIO(unsigned char, uHAL::GPIO::PORT, uHAL::GPIO::MODE, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED, uHAL::GPIO::PUPD)
+ .text._ZN4uHAL4GPIO10output_pinEhNS0_4PORTENS0_5OTYPEENS0_6OSPEEDE
+                0x080001f6       0x3a /tmp/ccNwHypB.o
+                0x080001f6                uHAL::GPIO::output_pin(unsigned char, uHAL::GPIO::PORT, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED)
+ .text._ZN4uHAL4GPIO9configureEv
+                0x08000230       0xf0 /tmp/ccNwHypB.o
+                0x08000230                uHAL::GPIO::configure()
+ .text._ZN4uHAL4GPIO9set_levelENS0_4PORTEhb
+                0x08000320       0x3c /tmp/ccNwHypB.o
+                0x08000320                uHAL::GPIO::set_level(uHAL::GPIO::PORT, unsigned char, bool)
+ .text._ZL4spinm
+                0x0800035c       0x2a /tmp/ccNwHypB.o
+ *fill*         0x08000386        0x2 
+ .text.main     0x08000388       0x48 /tmp/ccNwHypB.o
+                0x08000388                main
+ .text._reset   0x080003d0       0x44 /tmp/ccNwHypB.o
+                0x080003d0                _reset
+
+.glue_7         0x08000414        0x0
+ .glue_7        0x08000414        0x0 linker stubs
+
+.glue_7t        0x08000414        0x0
+ .glue_7t       0x08000414        0x0 linker stubs
+
+.vfp11_veneer   0x08000414        0x0
+ .vfp11_veneer  0x08000414        0x0 linker stubs
+
+.v4_bx          0x08000414        0x0
+ .v4_bx         0x08000414        0x0 linker stubs
+
+.iplt           0x08000414        0x0
+ .iplt          0x08000414        0x0 /tmp/ccNwHypB.o
+
+.rel.dyn        0x08000414        0x0
+ .rel.iplt      0x08000414        0x0 /tmp/ccNwHypB.o
+
+.rodata
+ *(.rodata*)
+
+.data           0x20000000        0x0 load address 0x08000414
+                0x20000000                        _sdata = .
+ *(.first_data)
+ *(.data SORT_BY_NAME(.data.*))
+                0x20000000                        _edata = .
+                0x08000414                        _sidata = LOADADDR (.data)
+
+.igot.plt       0x20000000        0x0 load address 0x08000414
+ .igot.plt      0x20000000        0x0 /tmp/ccNwHypB.o
+
+.bss            0x20000000        0x0 load address 0x08000414
+                0x20000000                        _sbss = .
+ *(.bss SORT_BY_NAME(.bss.*) COMMON)
+                0x20000000                        _ebss = .
+                0x20000000                        . = ALIGN (0x8)
+                0x20000000                        _end = .
+OUTPUT(firmware.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000      0x73c
+ .debug_info    0x00000000      0x73c /tmp/ccNwHypB.o
+
+.debug_abbrev   0x00000000      0x2d5
+ .debug_abbrev  0x00000000      0x2d5 /tmp/ccNwHypB.o
+
+.debug_aranges  0x00000000       0x50
+ .debug_aranges
+                0x00000000       0x50 /tmp/ccNwHypB.o
+
+.debug_rnglists
+                0x00000000       0x38
+ .debug_rnglists
+                0x00000000       0x38 /tmp/ccNwHypB.o
+
+.debug_macro    0x00000000     0xc9b7
+ .debug_macro   0x00000000       0x7b /tmp/ccNwHypB.o
+ .debug_macro   0x0000007b      0xc28 /tmp/ccNwHypB.o
+ .debug_macro   0x00000ca3       0x1c /tmp/ccNwHypB.o
+ .debug_macro   0x00000cbf       0x22 /tmp/ccNwHypB.o
+ .debug_macro   0x00000ce1       0x8e /tmp/ccNwHypB.o
+ .debug_macro   0x00000d6f       0x51 /tmp/ccNwHypB.o
+ .debug_macro   0x00000dc0      0x103 /tmp/ccNwHypB.o
+ .debug_macro   0x00000ec3       0x6a /tmp/ccNwHypB.o
+ .debug_macro   0x00000f2d      0x1df /tmp/ccNwHypB.o
+ .debug_macro   0x0000110c     0xb8ab /tmp/ccNwHypB.o
+
+.debug_line     0x00000000      0x2fc
+ .debug_line    0x00000000      0x2fc /tmp/ccNwHypB.o
+
+.debug_str      0x00000000    0x489e0
+ .debug_str     0x00000000    0x489e0 /tmp/ccNwHypB.o
+                              0x48b91 (size before relaxing)
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 /tmp/ccNwHypB.o
+                                 0x46 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x34
+ .ARM.attributes
+                0x00000000       0x34 /tmp/ccNwHypB.o
+
+.debug_frame    0x00000000      0x104
+ .debug_frame   0x00000000      0x104 /tmp/ccNwHypB.o
