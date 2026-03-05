@@ -1,6 +1,6 @@
-#include "gpio.h"
+#include "uHAL/gpio.hpp"
 
-static inline void spin(volatile uint32_t count) {
+static inline void spin(uint32_t count) {
     while (count--) (void)0;
 }
 
@@ -10,7 +10,7 @@ int main(void) {
     led.configure();
     while(4){
         uHAL::GPIO::set_level(uHAL::GPIO::PORT::A, 5, 1);
-        spin(999999);
+        spin(99999);
         
         uHAL::GPIO::set_level(uHAL::GPIO::PORT::A, 5, 0);
         spin(999999);

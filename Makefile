@@ -1,4 +1,4 @@
-CFLAGS  ?=  -W -Wall -Wextra -Wundef -Wshadow -Wdouble-promotion \
+CFLAGS  ?=  -std=c++23 -Isrc/include -W -Wall -Wextra -Wundef -Wshadow -Wdouble-promotion \
 	-Wformat-truncation -fno-common -Wconversion \
 	-g3 -O0 -ffunction-sections -fdata-sections -I. \
 	-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 $(EXTRA_CFLAGS) \
@@ -6,20 +6,19 @@ CFLAGS  ?=  -W -Wall -Wextra -Wundef -Wshadow -Wdouble-promotion \
 
 LDFLAGS ?= -Tstm32f401re.ld -nostartfiles -nostdlib --specs nano.specs -lc -lgcc -Wl,--gc-sections -Wl,-Map=$@.map
 
-SOURCES = main.cpp
+SOURCES = main.cpp src/gpio.cpp
+BUILD = build
 
-all: firmware.bin
+all: $(BUILD)/firmware.bin
 
-firmware.elf: $(SOURCES)
+$(BUILD)/firmware.elf: $(SOURCES)
 	arm-none-eabi-g++ $(SOURCES) $(CFLAGS) $(LDFLAGS) -o $@
 
-firmware.bin: firmware.elf
+$(BUILD)/firmware.bin: $(BUILD)/firmware.elf
 	arm-none-eabi-objcopy -O binary $< $@
 
-flash: firmware.bin
+flash: $(BUILD)/firmware.bin
 	st-flash --reset write $< 0x8000000
 
 clean:
-	rm -rf firmware.*
-
-.PHONY: all clean flash
+	rm -rf build/*

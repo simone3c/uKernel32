@@ -1,0 +1,286 @@
+
+Discarded input sections
+
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .group         0x00000000        0xc /tmp/ccb8RJCk.o
+ .text          0x00000000        0x0 /tmp/ccb8RJCk.o
+ .data          0x00000000        0x0 /tmp/ccb8RJCk.o
+ .bss           0x00000000        0x0 /tmp/ccb8RJCk.o
+ .group         0x00000000        0x8 /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0x8 /tmp/cctmOAUQ.o
+ .group         0x00000000        0x8 /tmp/cctmOAUQ.o
+ .group         0x00000000        0x8 /tmp/cctmOAUQ.o
+ .group         0x00000000        0x8 /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .group         0x00000000        0xc /tmp/cctmOAUQ.o
+ .text          0x00000000        0x0 /tmp/cctmOAUQ.o
+ .data          0x00000000        0x0 /tmp/cctmOAUQ.o
+ .bss           0x00000000        0x0 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000      0xcca /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000      0x22c /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x10 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0xd6 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0xed /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000      0x456 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x9a /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x1f /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x10 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x10 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000      0x9b5 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x12 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x49 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x5e /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000      0xa1e /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x1c /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x22 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x56 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x51 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000      0x103 /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000       0x6a /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000      0x1df /tmp/cctmOAUQ.o
+ .debug_macro   0x00000000     0xb8ab /tmp/cctmOAUQ.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00080000         xr
+sram             0x20000000         0x00017000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /tmp/ccb8RJCk.o
+LOAD /tmp/cctmOAUQ.o
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v7e-m+fp/hard/libgcc.a
+                0x20017000                        _estack = (ORIGIN (sram) + LENGTH (sram))
+
+.vectors        0x08000000      0x1ac
+ *(.vectors)
+ .vectors       0x08000000      0x1ac /tmp/ccb8RJCk.o
+
+.text           0x080001ac      0x4ce
+ *(.text*)
+ .text._ZL4spinm
+                0x080001ac       0x2a /tmp/ccb8RJCk.o
+ *fill*         0x080001d6        0x2 
+ .text.main     0x080001d8       0x4c /tmp/ccb8RJCk.o
+                0x080001d8                main
+ .text._reset   0x08000224       0x44 /tmp/ccb8RJCk.o
+                0x08000224                _reset
+ .text._ZN4uHAL4GPIOC2EhNS0_4PORTENS0_4MODEENS0_5OTYPEENS0_6OSPEEDENS0_4PUPDE
+                0x08000268       0x40 /tmp/cctmOAUQ.o
+                0x08000268                uHAL::GPIO::GPIO(unsigned char, uHAL::GPIO::PORT, uHAL::GPIO::MODE, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED, uHAL::GPIO::PUPD)
+                0x08000268                uHAL::GPIO::GPIO(unsigned char, uHAL::GPIO::PORT, uHAL::GPIO::MODE, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED, uHAL::GPIO::PUPD)
+ .text._ZN4uHAL4GPIO9configureEv
+                0x080002a8       0x68 /tmp/cctmOAUQ.o
+                0x080002a8                uHAL::GPIO::configure()
+ .text._ZN4uHAL4GPIO10output_pinEhNS0_4PORTENS0_5OTYPEENS0_6OSPEEDE
+                0x08000310       0x30 /tmp/cctmOAUQ.o
+                0x08000310                uHAL::GPIO::output_pin(unsigned char, uHAL::GPIO::PORT, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED)
+ .text._ZN4uHAL4GPIO9set_levelENS0_4PORTEhb
+                0x08000340       0x38 /tmp/cctmOAUQ.o
+                0x08000340                uHAL::GPIO::set_level(uHAL::GPIO::PORT, unsigned char, bool)
+ .text._ZN4uHAL4GPIO6IS_PINEh
+                0x08000378       0x20 /tmp/cctmOAUQ.o
+                0x08000378                uHAL::GPIO::IS_PIN(unsigned char)
+ .text._ZN4uHAL4GPIO12get_port_ptrENS0_4PORTE
+                0x08000398       0x84 /tmp/cctmOAUQ.o
+                0x08000398                uHAL::GPIO::get_port_ptr(uHAL::GPIO::PORT)
+ .text._ZN4uHAL4GPIO17set_gpio_propertyINS0_4MODEEEENS_5err_tENS0_4PORTEhT_
+                0x0800041c       0x80 /tmp/cctmOAUQ.o
+                0x0800041c                uHAL::err_t uHAL::GPIO::set_gpio_property<uHAL::GPIO::MODE>(uHAL::GPIO::PORT, unsigned char, uHAL::GPIO::MODE)
+ .text._ZN4uHAL4GPIO17set_gpio_propertyINS0_5OTYPEEEENS_5err_tENS0_4PORTEhT_
+                0x0800049c       0x8a /tmp/cctmOAUQ.o
+                0x0800049c                uHAL::err_t uHAL::GPIO::set_gpio_property<uHAL::GPIO::OTYPE>(uHAL::GPIO::PORT, unsigned char, uHAL::GPIO::OTYPE)
+ .text._ZN4uHAL4GPIO17set_gpio_propertyINS0_6OSPEEDEEENS_5err_tENS0_4PORTEhT_
+                0x08000526       0x82 /tmp/cctmOAUQ.o
+                0x08000526                uHAL::err_t uHAL::GPIO::set_gpio_property<uHAL::GPIO::OSPEED>(uHAL::GPIO::PORT, unsigned char, uHAL::GPIO::OSPEED)
+ .text._ZN4uHAL4GPIO17set_gpio_propertyINS0_4PUPDEEENS_5err_tENS0_4PORTEhT_
+                0x080005a8       0x82 /tmp/cctmOAUQ.o
+                0x080005a8                uHAL::err_t uHAL::GPIO::set_gpio_property<uHAL::GPIO::PUPD>(uHAL::GPIO::PORT, unsigned char, uHAL::GPIO::PUPD)
+ .text._ZSt13to_underlyingIN4uHAL4GPIO4MODEEENSt15underlying_typeIT_E4typeES4_
+                0x0800062a       0x14 /tmp/cctmOAUQ.o
+                0x0800062a                std::underlying_type<uHAL::GPIO::MODE>::type std::to_underlying<uHAL::GPIO::MODE>(uHAL::GPIO::MODE)
+ .text._ZSt13to_underlyingIN4uHAL4GPIO5OTYPEEENSt15underlying_typeIT_E4typeES4_
+                0x0800063e       0x14 /tmp/cctmOAUQ.o
+                0x0800063e                std::underlying_type<uHAL::GPIO::OTYPE>::type std::to_underlying<uHAL::GPIO::OTYPE>(uHAL::GPIO::OTYPE)
+ .text._ZSt13to_underlyingIN4uHAL4GPIO6OSPEEDEENSt15underlying_typeIT_E4typeES4_
+                0x08000652       0x14 /tmp/cctmOAUQ.o
+                0x08000652                std::underlying_type<uHAL::GPIO::OSPEED>::type std::to_underlying<uHAL::GPIO::OSPEED>(uHAL::GPIO::OSPEED)
+ .text._ZSt13to_underlyingIN4uHAL4GPIO4PUPDEENSt15underlying_typeIT_E4typeES4_
+                0x08000666       0x14 /tmp/cctmOAUQ.o
+                0x08000666                std::underlying_type<uHAL::GPIO::PUPD>::type std::to_underlying<uHAL::GPIO::PUPD>(uHAL::GPIO::PUPD)
+
+.glue_7         0x0800067c        0x0
+ .glue_7        0x0800067c        0x0 linker stubs
+
+.glue_7t        0x0800067c        0x0
+ .glue_7t       0x0800067c        0x0 linker stubs
+
+.vfp11_veneer   0x0800067c        0x0
+ .vfp11_veneer  0x0800067c        0x0 linker stubs
+
+.v4_bx          0x0800067c        0x0
+ .v4_bx         0x0800067c        0x0 linker stubs
+
+.iplt           0x0800067c        0x0
+ .iplt          0x0800067c        0x0 /tmp/ccb8RJCk.o
+
+.rel.dyn        0x0800067c        0x0
+ .rel.iplt      0x0800067c        0x0 /tmp/ccb8RJCk.o
+
+.rodata
+ *(.rodata*)
+
+.data           0x20000000        0x0 load address 0x0800067a
+                0x20000000                        _sdata = .
+ *(.first_data)
+ *(.data SORT_BY_NAME(.data.*))
+                0x20000000                        _edata = .
+                0x0800067a                        _sidata = LOADADDR (.data)
+
+.igot.plt       0x20000000        0x0 load address 0x0800067a
+ .igot.plt      0x20000000        0x0 /tmp/ccb8RJCk.o
+
+.bss            0x20000000        0x0 load address 0x0800067a
+                0x20000000                        _sbss = .
+ *(.bss SORT_BY_NAME(.bss.*) COMMON)
+                0x20000000                        _ebss = .
+                0x20000000                        . = ALIGN (0x8)
+                0x20000000                        _end = .
+OUTPUT(build/firmware.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0x1184
+ .debug_info    0x00000000      0x503 /tmp/ccb8RJCk.o
+ .debug_info    0x00000503      0xc81 /tmp/cctmOAUQ.o
+
+.debug_abbrev   0x00000000      0x612
+ .debug_abbrev  0x00000000      0x2a3 /tmp/ccb8RJCk.o
+ .debug_abbrev  0x000002a3      0x36f /tmp/cctmOAUQ.o
+
+.debug_aranges  0x00000000       0xb8
+ .debug_aranges
+                0x00000000       0x30 /tmp/ccb8RJCk.o
+ .debug_aranges
+                0x00000030       0x88 /tmp/cctmOAUQ.o
+
+.debug_rnglists
+                0x00000000       0x85
+ .debug_rnglists
+                0x00000000       0x1f /tmp/ccb8RJCk.o
+ .debug_rnglists
+                0x0000001f       0x66 /tmp/cctmOAUQ.o
+
+.debug_macro    0x00000000    0x127eb
+ .debug_macro   0x00000000      0x16e /tmp/ccb8RJCk.o
+ .debug_macro   0x0000016e      0xcca /tmp/ccb8RJCk.o
+ .debug_macro   0x00000e38       0x1c /tmp/ccb8RJCk.o
+ .debug_macro   0x00000e54       0x22 /tmp/ccb8RJCk.o
+ .debug_macro   0x00000e76       0x56 /tmp/ccb8RJCk.o
+ .debug_macro   0x00000ecc       0x51 /tmp/ccb8RJCk.o
+ .debug_macro   0x00000f1d      0x103 /tmp/ccb8RJCk.o
+ .debug_macro   0x00001020       0x6a /tmp/ccb8RJCk.o
+ .debug_macro   0x0000108a      0x1df /tmp/ccb8RJCk.o
+ .debug_macro   0x00001269       0x10 /tmp/ccb8RJCk.o
+ .debug_macro   0x00001279      0x22c /tmp/ccb8RJCk.o
+ .debug_macro   0x000014a5       0x10 /tmp/ccb8RJCk.o
+ .debug_macro   0x000014b5       0xd6 /tmp/ccb8RJCk.o
+ .debug_macro   0x0000158b       0xed /tmp/ccb8RJCk.o
+ .debug_macro   0x00001678      0x456 /tmp/ccb8RJCk.o
+ .debug_macro   0x00001ace      0xa68 /tmp/ccb8RJCk.o
+ .debug_macro   0x00002536       0x9a /tmp/ccb8RJCk.o
+ .debug_macro   0x000025d0      0xaf8 /tmp/ccb8RJCk.o
+ .debug_macro   0x000030c8       0x1f /tmp/ccb8RJCk.o
+ .debug_macro   0x000030e7       0x10 /tmp/ccb8RJCk.o
+ .debug_macro   0x000030f7      0x9c3 /tmp/ccb8RJCk.o
+ .debug_macro   0x00003aba      0x9b5 /tmp/ccb8RJCk.o
+ .debug_macro   0x0000446f       0x12 /tmp/ccb8RJCk.o
+ .debug_macro   0x00004481       0x49 /tmp/ccb8RJCk.o
+ .debug_macro   0x000044ca       0x5e /tmp/ccb8RJCk.o
+ .debug_macro   0x00004528      0xa1e /tmp/ccb8RJCk.o
+ .debug_macro   0x00004f46     0xb8ab /tmp/ccb8RJCk.o
+ .debug_macro   0x000107f1      0x16e /tmp/cctmOAUQ.o
+ .debug_macro   0x0001095f      0xaff /tmp/cctmOAUQ.o
+ .debug_macro   0x0001145e      0x9ca /tmp/cctmOAUQ.o
+ .debug_macro   0x00011e28      0x9c3 /tmp/cctmOAUQ.o
+
+.debug_line     0x00000000      0xa5b
+ .debug_line    0x00000000      0x3eb /tmp/ccb8RJCk.o
+ .debug_line    0x000003eb      0x670 /tmp/cctmOAUQ.o
+
+.debug_str      0x00000000    0x4fbc7
+ .debug_str     0x00000000    0x4fbc7 /tmp/ccb8RJCk.o
+                              0x4f76b (size before relaxing)
+ .debug_str     0x0004fbc7        0x0 /tmp/cctmOAUQ.o
+                              0x4fd58 (size before relaxing)
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 /tmp/ccb8RJCk.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045        0x0 /tmp/cctmOAUQ.o
+                                 0x46 (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x34
+ .ARM.attributes
+                0x00000000       0x34 /tmp/ccb8RJCk.o
+ .ARM.attributes
+                0x00000034       0x34 /tmp/cctmOAUQ.o
+
+.debug_frame    0x00000000      0x28c
+ .debug_frame   0x00000000       0x68 /tmp/ccb8RJCk.o
+ .debug_frame   0x00000068      0x224 /tmp/cctmOAUQ.o
