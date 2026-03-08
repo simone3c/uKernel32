@@ -4,42 +4,50 @@
 
 using uHAL::GPIO;
 
-GPIO::GPIO(pin_t pinno, PORT port, MODE mode, OTYPE optye, OSPEED ospeed, PUPD pupd):
-    _pinno(pinno), _port(port), _mode(mode), _otype(optye), _ospeed(ospeed), _pupd(pupd)
+GPIO::GPIO(PORT port, pin_bitmask_t pins, MODE mode, OTYPE optye, OSPEED ospeed, PUPD pupd):
+    _pins(pins), _port(port), _mode(mode), _otype(optye), _ospeed(ospeed), _pupd(pupd)
 {}
 
 uHAL::err_t GPIO::set_gpio_property(auto prop){
-    return set_gpio_property(_port, _pinno, prop);
+    return set_property(_port, _pins, prop);
 }
 
 void GPIO::configure(){
 
     RCC->AHB1ENR |= 1;     // Enable GPIO clock for LED
 
-    set_gpio_property(_port, _pinno, _mode);
-    set_gpio_property(_port, _pinno, _otype);
-    set_gpio_property(_port, _pinno, _ospeed);
-    set_gpio_property(_port, _pinno, _pupd);
+    set_property(_port, _pins, _mode);
+    set_property(_port, _pins, _otype);
+    set_property(_port, _pins, _ospeed);
+    set_property(_port, _pins, _pupd);
 }
 
 // --- static methods ---
 
-GPIO GPIO::output_pin(
-    pin_t pinno, 
+GPIO GPIO::create_output(
     PORT port, 
+    pin_bitmask_t pinno,
     OTYPE otype, 
     OSPEED ospeed
 ){
-    return GPIO(pinno, port, MODE::OUTPUT, otype, ospeed, PUPD::PULL_UP);
+    return GPIO(port, pinno, MODE::OUTPUT, otype, ospeed, PUPD::NONE);
 }
 
-void GPIO::set_level(PORT port, pin_t pinno, bool l){
+void GPIO::set_level(PORT port, pin_bitmask_t pins, bool l){
     GPIO_TypeDef* port_hw = get_port_ptr(port);
 
-    port_hw->BSRR = (1U << pinno) << (l ? 0 : 16);
+    port_hw->BSRR |= ((uint32_t)pins) << (l ? 0 : 16);
 }
 
-constexpr bool GPIO::IS_PIN(pin_t pin){
+void GPIO::toggle_level(PORT port, pin_bitmask_t pins){
+    GPIO_TypeDef* port_hw = get_port_ptr(port);
+
+    uint32_t odr = port_hw->ODR;
+
+    port_hw->BSRR = (odr & pins) << 16 | (~odr & pins);
+}
+
+constexpr bool GPIO::IS_PIN(unsigned pin){
     return (pin & 0xFF) < 16;
 }
 

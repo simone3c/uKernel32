@@ -8,24 +8,28 @@
 #include "error.hpp"
 #include "stm32f401xe.h"
 
-#define RETURN_IF_ERROR(left, ok_value) if(ret = (left); ret != (ok_value)) { return ret }
+#define RETURN_LEFT_IF_DIFFERENT(left, right) if(ret = (left); ret != (right)) { return ret }
 
 
 namespace uHAL{
     struct GPIO{
 
-        using pin_t = uint8_t;
+        using pin_bitmask_t = uint16_t;
+        
+        template <unsigned n>
+        requires (n < 16)
+        static constexpr pin_bitmask_t PIN = 1UL << n;
 
-        pin_t _pinno;
+        pin_bitmask_t _pins;
         enum class PORT{A, B, C, D, E, H} _port;
         enum class MODE{INPUT, OUTPUT, ALTERNATE, ANALOG} _mode;
         enum class OTYPE{PUSH_PULL, OPEN_DRAIN} _otype;
         enum class OSPEED{LOW, MEDIUM, HIGH, VERY_HIGH} _ospeed;
-        enum class PUPD{PULL_UP, PULL_DOWN} _pupd;
+        enum class PUPD{NONE, PULL_UP, PULL_DOWN} _pupd;
         
         // TODO alternate func e lock
 
-        GPIO(pin_t, PORT, MODE, OTYPE, OSPEED, PUPD);
+        GPIO(PORT, pin_bitmask_t, MODE, OTYPE, OSPEED, PUPD);
 
         err_t set_gpio_property(auto);
 
@@ -33,9 +37,9 @@ namespace uHAL{
 
         // --- static methods ---
 
-        static GPIO output_pin(
-            pin_t, 
-            PORT, 
+        static GPIO create_output(
+            PORT,
+            pin_bitmask_t, 
             OTYPE otype = OTYPE::PUSH_PULL, 
             OSPEED ospeed = OSPEED::LOW
         );
@@ -46,11 +50,7 @@ namespace uHAL{
             std::same_as<T, GPIO::OTYPE> || 
             std::same_as<T, GPIO::OSPEED> || 
             std::same_as<T, GPIO::PUPD>
-        static err_t set_gpio_property(PORT p, pin_t pinno, T prop){
-            if(!IS_PIN(pinno)){
-                return INVALID_PIN_NUMBER;
-            }
-
+        static err_t set_property(PORT p, pin_bitmask_t pins, T prop){
             GPIO_TypeDef* port_hw = get_port_ptr(p);
             volatile uint32_t* field_hw = nullptr;
 
@@ -72,16 +72,23 @@ namespace uHAL{
                 field_hw = &port_hw->PUPDR;
             }
 
-            *field_hw &= ~(mask << (pinno * mask_bit_len));
-            *field_hw |= std::to_underlying(prop) << (pinno * mask_bit_len);
+            uint32_t tmp = *field_hw;
+            for(int i = 0; i < sizeof(pins) * 8; ++i){
+                if(pins & (1UL << i)){
+                    tmp &= ~(mask << (i * mask_bit_len));
+                    tmp |= std::to_underlying(prop) << (i * mask_bit_len);
+                }
+            }
+            *field_hw = tmp;
 
             return OK;
         }
 
-        static void set_level(PORT, pin_t, bool);
+        static void set_level(PORT, pin_bitmask_t, bool);
+        static void toggle_level(PORT, pin_bitmask_t);
 
     private:
-        static constexpr bool IS_PIN(pin_t);
+        static constexpr bool IS_PIN(unsigned);
         static GPIO_TypeDef* get_port_ptr(PORT);
     };
 }

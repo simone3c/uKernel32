@@ -6,14 +6,18 @@ static inline void spin(uint32_t count) {
 
 int main(void) {
     
-    uHAL::GPIO led = uHAL::GPIO::output_pin(5, uHAL::GPIO::PORT::A);
+    uHAL::GPIO led = uHAL::GPIO::create_output(
+        uHAL::GPIO::PORT::A, 
+        uHAL::GPIO::PIN<5>
+    );
     led.configure();
+
     while(4){
-        uHAL::GPIO::set_level(uHAL::GPIO::PORT::A, 5, 1);
-        spin(99999);
+        uHAL::GPIO::toggle_level(uHAL::GPIO::PORT::A, uHAL::GPIO::PIN<5>);
+        spin(699999);
         
-        uHAL::GPIO::set_level(uHAL::GPIO::PORT::A, 5, 0);
-        spin(999999);
+        uHAL::GPIO::toggle_level(uHAL::GPIO::PORT::A, uHAL::GPIO::PIN<5>);
+        spin(699999);
     }
 }
 
