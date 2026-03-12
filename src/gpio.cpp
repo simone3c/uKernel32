@@ -4,13 +4,9 @@
 
 using uHAL::GPIO;
 
-GPIO::GPIO(PORT port, pin_bitmask_t pins, MODE mode, OTYPE optye, OSPEED ospeed, PUPD pupd):
-    _pins(pins), _port(port), _mode(mode), _otype(optye), _ospeed(ospeed), _pupd(pupd)
+GPIO::GPIO(PORT port, pin_bitmask_t pins, MODE mode, OTYPE otype, OSPEED ospeed, PUPD pupd):
+    _pins(pins), _port(port), _mode(mode), _otype(otype), _ospeed(ospeed), _pupd(pupd)
 {}
-
-uHAL::err_t GPIO::set_gpio_property(auto prop){
-    return set_property(_port, _pins, prop);
-}
 
 void GPIO::configure(){
 
@@ -20,6 +16,14 @@ void GPIO::configure(){
     set_property(_port, _pins, _otype);
     set_property(_port, _pins, _ospeed);
     set_property(_port, _pins, _pupd);
+}
+
+void GPIO::set_level(bool l){
+    set_level(_port, _pins, l);
+}
+
+void GPIO::toggle_level(){
+    toggle_level(_port, _pins);
 }
 
 // --- static methods ---
@@ -45,10 +49,6 @@ void GPIO::toggle_level(PORT port, pin_bitmask_t pins){
     uint32_t odr = port_hw->ODR;
 
     port_hw->BSRR = (odr & pins) << 16 | (~odr & pins);
-}
-
-constexpr bool GPIO::IS_PIN(unsigned pin){
-    return (pin & 0xFF) < 16;
 }
 
 GPIO_TypeDef* GPIO::get_port_ptr(PORT p){

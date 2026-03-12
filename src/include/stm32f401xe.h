@@ -138,6 +138,7 @@ typedef enum
   * @}
   */
 
+#include "cortex_m4.h"
 #include <stdint.h>
 
 /** @addtogroup Peripheral_registers_structures
