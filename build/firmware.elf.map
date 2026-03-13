@@ -1,179 +1,305 @@
 
 Discarded input sections
 
- .group         0x00000000        0xc /tmp/ccB7FCUx.o
- .text          0x00000000        0x0 /tmp/ccB7FCUx.o
- .data          0x00000000        0x0 /tmp/ccB7FCUx.o
- .bss           0x00000000        0x0 /tmp/ccB7FCUx.o
+ .group         0x00000000        0xc /tmp/ccFsFqng.o
+ .text          0x00000000        0x0 /tmp/ccFsFqng.o
+ .data          0x00000000        0x0 /tmp/ccFsFqng.o
+ .bss           0x00000000        0x0 /tmp/ccFsFqng.o
  .text._Z19systick_irq_handlerv
-                0x00000000        0xc /tmp/ccB7FCUx.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccOLmx1u.o
- .text          0x00000000        0x0 /tmp/ccOLmx1u.o
- .data          0x00000000        0x0 /tmp/ccOLmx1u.o
- .bss           0x00000000        0x0 /tmp/ccOLmx1u.o
- .debug_macro   0x00000000      0xcca /tmp/ccOLmx1u.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0x8 /tmp/ccAdcllP.o
- .group         0x00000000        0x8 /tmp/ccAdcllP.o
- .group         0x00000000        0x8 /tmp/ccAdcllP.o
- .group         0x00000000        0x8 /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .group         0x00000000        0xc /tmp/ccAdcllP.o
- .text          0x00000000        0x0 /tmp/ccAdcllP.o
- .data          0x00000000        0x0 /tmp/ccAdcllP.o
- .bss           0x00000000        0x0 /tmp/ccAdcllP.o
- .text._ZN4uHAL4GPIO9set_levelEb
-                0x00000000       0x24 /tmp/ccAdcllP.o
- .text._ZN4uHAL4GPIO12toggle_levelEv
-                0x00000000       0x20 /tmp/ccAdcllP.o
+                0x00000000        0xc /tmp/ccFsFqng.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .group         0x00000000        0xc /tmp/ccDhXCT9.o
+ .text          0x00000000        0x0 /tmp/ccDhXCT9.o
+ .data          0x00000000        0x0 /tmp/ccDhXCT9.o
+ .bss           0x00000000        0x0 /tmp/ccDhXCT9.o
+ .debug_macro   0x00000000      0xcca /tmp/ccDhXCT9.o
+ .group         0x00000000        0x8 /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0x8 /tmp/cc92FVPV.o
+ .group         0x00000000        0x8 /tmp/cc92FVPV.o
+ .group         0x00000000        0x8 /tmp/cc92FVPV.o
+ .group         0x00000000        0x8 /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .group         0x00000000        0xc /tmp/cc92FVPV.o
+ .text          0x00000000        0x0 /tmp/cc92FVPV.o
+ .data          0x00000000        0x0 /tmp/cc92FVPV.o
+ .bss           0x00000000        0x0 /tmp/cc92FVPV.o
+ .text._ZNK4uHAL4GPIO9set_levelEb
+                0x00000000       0x24 /tmp/cc92FVPV.o
+ .text._ZNK4uHAL4GPIO12toggle_levelEv
+                0x00000000       0x20 /tmp/cc92FVPV.o
  .text._ZN4uHAL4GPIO9set_levelENS0_4PORTEtb
-                0x00000000       0x3c /tmp/ccAdcllP.o
- .debug_macro   0x00000000      0xcca /tmp/ccAdcllP.o
- .debug_macro   0x00000000      0x22c /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x10 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0xd6 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0xed /tmp/ccAdcllP.o
- .debug_macro   0x00000000      0x456 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x9a /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x1f /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x10 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x10 /tmp/ccAdcllP.o
- .debug_macro   0x00000000      0x9b5 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x12 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x49 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x5e /tmp/ccAdcllP.o
- .debug_macro   0x00000000      0xa1e /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x1c /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x22 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x56 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x51 /tmp/ccAdcllP.o
- .debug_macro   0x00000000      0x103 /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x6a /tmp/ccAdcllP.o
- .debug_macro   0x00000000      0x1df /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x2e /tmp/ccAdcllP.o
- .debug_macro   0x00000000       0x10 /tmp/ccAdcllP.o
- .debug_macro   0x00000000     0xb881 /tmp/ccAdcllP.o
- .group         0x00000000        0x8 /tmp/cc71MOn3.o
- .group         0x00000000        0x8 /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0x8 /tmp/cc71MOn3.o
- .group         0x00000000        0x8 /tmp/cc71MOn3.o
- .group         0x00000000        0x8 /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .group         0x00000000        0xc /tmp/cc71MOn3.o
- .text          0x00000000        0x0 /tmp/cc71MOn3.o
- .data          0x00000000        0x0 /tmp/cc71MOn3.o
- .bss           0x00000000        0x0 /tmp/cc71MOn3.o
- .text._ZN4uHAL7systick8callbackEv
-                0x00000000        0xc /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0xcca /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x1c /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x22 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x56 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x51 /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0x103 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x6a /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0x1df /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x10 /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0x22c /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x10 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0xd6 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0xed /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0x456 /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0xa68 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x9a /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0xaf8 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x1f /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x10 /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0x9c3 /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0x9b5 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x12 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x49 /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x5e /tmp/cc71MOn3.o
- .debug_macro   0x00000000      0xa1e /tmp/cc71MOn3.o
- .debug_macro   0x00000000       0x10 /tmp/cc71MOn3.o
+                0x00000000       0x3c /tmp/cc92FVPV.o
+ .debug_macro   0x00000000      0xcca /tmp/cc92FVPV.o
+ .debug_macro   0x00000000      0x22c /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x10 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0xd6 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0xed /tmp/cc92FVPV.o
+ .debug_macro   0x00000000      0x456 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x9a /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x1f /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x10 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x10 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000      0x9b5 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x12 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x49 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x5e /tmp/cc92FVPV.o
+ .debug_macro   0x00000000      0xa1e /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x1c /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x22 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x56 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x51 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000      0x103 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x6a /tmp/cc92FVPV.o
+ .debug_macro   0x00000000      0x1df /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x2e /tmp/cc92FVPV.o
+ .debug_macro   0x00000000       0x10 /tmp/cc92FVPV.o
+ .debug_macro   0x00000000     0xb881 /tmp/cc92FVPV.o
+ .group         0x00000000        0x8 /tmp/cc9Hwr5R.o
+ .group         0x00000000        0x8 /tmp/cc9Hwr5R.o
+ .group         0x00000000        0x8 /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0x8 /tmp/cc9Hwr5R.o
+ .group         0x00000000        0x8 /tmp/cc9Hwr5R.o
+ .group         0x00000000        0x8 /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .group         0x00000000        0xc /tmp/cc9Hwr5R.o
+ .text          0x00000000        0x0 /tmp/cc9Hwr5R.o
+ .data          0x00000000        0x0 /tmp/cc9Hwr5R.o
+ .bss           0x00000000        0x0 /tmp/cc9Hwr5R.o
+ .text._ZN4uHAL3BITEj
+                0x00000000       0x1a /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0xcca /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0x22c /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x10 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0xd6 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0xed /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0x456 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x9a /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0xaff /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x10 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0x9ca /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x10 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0x9c3 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0x9b5 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x12 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x12 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x1c /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x12 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x1c /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x28 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x2e /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x12 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x10 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x12 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x34 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x11 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x22 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x10 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x88 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x28 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x2e /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x32 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x34 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x28 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0x197 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x27 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x10 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x26 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x2e /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x22 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x38 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x32 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x32 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x12 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x2c /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x12 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x46 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x2e /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x1c /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x22 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x56 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x51 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0x103 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x6a /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000      0x1df /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x5e /tmp/cc9Hwr5R.o
+ .debug_macro   0x00000000       0x10 /tmp/cc9Hwr5R.o
 
 Memory Configuration
 
@@ -184,256 +310,327 @@ sram             0x20000000         0x00017000         xrw
 
 Linker script and memory map
 
-LOAD /tmp/ccB7FCUx.o
-LOAD /tmp/ccOLmx1u.o
-LOAD /tmp/ccAdcllP.o
-LOAD /tmp/cc71MOn3.o
+LOAD /tmp/ccFsFqng.o
+LOAD /tmp/ccDhXCT9.o
+LOAD /tmp/cc92FVPV.o
+LOAD /tmp/cc9Hwr5R.o
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/15.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/15.2.1/thumb/v7e-m+fp/hard/libgcc.a
                 0x20017000                        _estack = (ORIGIN (sram) + LENGTH (sram))
 
 .vectors        0x08000000      0x1ac
  *(.vectors)
- .vectors       0x08000000      0x1ac /tmp/ccB7FCUx.o
+ .vectors       0x08000000      0x1ac /tmp/ccFsFqng.o
 
-.text           0x080001ac      0x714
+.text           0x080001ac      0x71c
  *(.text*)
- .text._reset   0x080001ac       0x44 /tmp/ccB7FCUx.o
+ .text._reset   0x080001ac       0x44 /tmp/ccFsFqng.o
                 0x080001ac                _reset
- .text._ZN4uHAL7systick8callbackEv
-                0x080001f0       0x10 /tmp/ccOLmx1u.o
-                0x080001f0                uHAL::systick::callback()
- .text.main     0x08000200       0x3e /tmp/ccOLmx1u.o
+ .text._Z10systick_cbv
+                0x080001f0       0x10 /tmp/ccDhXCT9.o
+                0x080001f0                systick_cb()
+ .text.main     0x08000200       0x40 /tmp/ccDhXCT9.o
                 0x08000200                main
- .text._ZN4uHAL4GPIOC2ENS0_4PORTEtNS0_4MODEENS0_5OTYPEENS0_6OSPEEDENS0_4PUPDE
-                0x0800023e       0x40 /tmp/ccAdcllP.o
-                0x0800023e                uHAL::GPIO::GPIO(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::MODE, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED, uHAL::GPIO::PUPD)
-                0x0800023e                uHAL::GPIO::GPIO(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::MODE, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED, uHAL::GPIO::PUPD)
- *fill*         0x0800027e        0x2 
- .text._ZN4uHAL4GPIO9configureEv
-                0x08000280       0x68 /tmp/ccAdcllP.o
-                0x08000280                uHAL::GPIO::configure()
- .text._ZN4uHAL4GPIO13create_outputENS0_4PORTEtNS0_5OTYPEENS0_6OSPEEDE
-                0x080002e8       0x30 /tmp/ccAdcllP.o
-                0x080002e8                uHAL::GPIO::create_output(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED)
- .text._ZN4uHAL4GPIO12toggle_levelENS0_4PORTEt
-                0x08000318       0x38 /tmp/ccAdcllP.o
-                0x08000318                uHAL::GPIO::toggle_level(uHAL::GPIO::PORT, unsigned short)
- .text._ZN4uHAL4GPIO12get_port_ptrENS0_4PORTE
-                0x08000350       0x84 /tmp/ccAdcllP.o
-                0x08000350                uHAL::GPIO::get_port_ptr(uHAL::GPIO::PORT)
- .text._ZN4uHAL4GPIO12set_propertyINS0_4MODEEEEvNS0_4PORTEtT_
-                0x080003d4       0x90 /tmp/ccAdcllP.o
-                0x080003d4                void uHAL::GPIO::set_property<uHAL::GPIO::MODE>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::MODE)
- .text._ZN4uHAL4GPIO12set_propertyINS0_5OTYPEEEEvNS0_4PORTEtT_
-                0x08000464       0x9a /tmp/ccAdcllP.o
-                0x08000464                void uHAL::GPIO::set_property<uHAL::GPIO::OTYPE>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::OTYPE)
- .text._ZN4uHAL4GPIO12set_propertyINS0_6OSPEEDEEEvNS0_4PORTEtT_
-                0x080004fe       0x92 /tmp/ccAdcllP.o
-                0x080004fe                void uHAL::GPIO::set_property<uHAL::GPIO::OSPEED>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::OSPEED)
- .text._ZN4uHAL4GPIO12set_propertyINS0_4PUPDEEEvNS0_4PORTEtT_
-                0x08000590       0x92 /tmp/ccAdcllP.o
-                0x08000590                void uHAL::GPIO::set_property<uHAL::GPIO::PUPD>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::PUPD)
- .text._ZSt13to_underlyingIN4uHAL4GPIO4MODEEENSt15underlying_typeIT_E4typeES4_
-                0x08000622       0x14 /tmp/ccAdcllP.o
-                0x08000622                std::underlying_type<uHAL::GPIO::MODE>::type std::to_underlying<uHAL::GPIO::MODE>(uHAL::GPIO::MODE)
- .text._ZSt13to_underlyingIN4uHAL4GPIO5OTYPEEENSt15underlying_typeIT_E4typeES4_
-                0x08000636       0x14 /tmp/ccAdcllP.o
-                0x08000636                std::underlying_type<uHAL::GPIO::OTYPE>::type std::to_underlying<uHAL::GPIO::OTYPE>(uHAL::GPIO::OTYPE)
- .text._ZSt13to_underlyingIN4uHAL4GPIO6OSPEEDEENSt15underlying_typeIT_E4typeES4_
-                0x0800064a       0x14 /tmp/ccAdcllP.o
-                0x0800064a                std::underlying_type<uHAL::GPIO::OSPEED>::type std::to_underlying<uHAL::GPIO::OSPEED>(uHAL::GPIO::OSPEED)
- .text._ZSt13to_underlyingIN4uHAL4GPIO4PUPDEENSt15underlying_typeIT_E4typeES4_
-                0x0800065e       0x14 /tmp/ccAdcllP.o
-                0x0800065e                std::underlying_type<uHAL::GPIO::PUPD>::type std::to_underlying<uHAL::GPIO::PUPD>(uHAL::GPIO::PUPD)
  .text._ZN4uHAL3BITEj
-                0x08000672       0x1a /tmp/cc71MOn3.o
-                0x08000672                uHAL::BIT(unsigned int)
- .text._ZN4uHAL7systickC2EmNS0_9CLKSOURCEENS0_7TICKINTENS0_6ENABLEE
-                0x0800068c       0x36 /tmp/cc71MOn3.o
-                0x0800068c                uHAL::systick::systick(unsigned long, uHAL::systick::CLKSOURCE, uHAL::systick::TICKINT, uHAL::systick::ENABLE)
-                0x0800068c                uHAL::systick::systick(unsigned long, uHAL::systick::CLKSOURCE, uHAL::systick::TICKINT, uHAL::systick::ENABLE)
- *fill*         0x080006c2        0x2 
- .text._ZN4uHAL7systick9configureEv
-                0x080006c4       0x5c /tmp/cc71MOn3.o
-                0x080006c4                uHAL::systick::configure()
- .text._ZN4uHAL7systick9period_msEm
-                0x08000720       0x48 /tmp/cc71MOn3.o
-                0x08000720                uHAL::systick::period_ms(unsigned long)
+                0x08000240       0x1a /tmp/cc92FVPV.o
+                0x08000240                uHAL::BIT(unsigned int)
+ *fill*         0x0800025a        0x2 
+ .text._Z12get_port_ptrN4uHAL4GPIO4PORTE
+                0x0800025c       0x84 /tmp/cc92FVPV.o
+                0x0800025c                get_port_ptr(uHAL::GPIO::PORT)
+ .text._ZNK4uHAL4GPIO4initEv
+                0x080002e0       0x68 /tmp/cc92FVPV.o
+                0x080002e0                uHAL::GPIO::init() const
+ .text._ZN4uHAL4GPIO13create_outputENS0_4PORTEtNS0_5OTYPEENS0_6OSPEEDE
+                0x08000348       0x3e /tmp/cc92FVPV.o
+                0x08000348                uHAL::GPIO::create_output(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED)
+ .text._ZN4uHAL4GPIO12toggle_levelENS0_4PORTEt
+                0x08000386       0x38 /tmp/cc92FVPV.o
+                0x08000386                uHAL::GPIO::toggle_level(uHAL::GPIO::PORT, unsigned short)
+ .text._Z17set_property_enumIN4uHAL4GPIO4MODEEQoooooo7same_asIT_S2_E7same_asIS3_NS1_5OTYPEEE7same_asIS3_NS1_6OSPEEDEE7same_asIS3_NS1_4PUPDEEEvNS1_4PORTEtS3_
+                0x080003be       0xa0 /tmp/cc92FVPV.o
+                0x080003be                void set_property_enum<uHAL::GPIO::MODE>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::MODE) requires (((same_as<uHAL::GPIO::MODE, uHAL::GPIO::MODE>)||(same_as<uHAL::GPIO::MODE, uHAL::GPIO::OTYPE>))||(same_as<uHAL::GPIO::MODE, uHAL::GPIO::OSPEED>))||(same_as<uHAL::GPIO::MODE, uHAL::GPIO::PUPD>)
+                0x080003be                void set_property_enum<uHAL::GPIO::MODE>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::MODE)
+ .text._Z17set_property_enumIN4uHAL4GPIO5OTYPEEQoooooo7same_asIT_NS1_4MODEEE7same_asIS3_S2_E7same_asIS3_NS1_6OSPEEDEE7same_asIS3_NS1_4PUPDEEEvNS1_4PORTEtS3_
+                0x0800045e       0xa6 /tmp/cc92FVPV.o
+                0x0800045e                void set_property_enum<uHAL::GPIO::OTYPE>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::OTYPE) requires (((same_as<uHAL::GPIO::OTYPE, uHAL::GPIO::MODE>)||(same_as<uHAL::GPIO::OTYPE, uHAL::GPIO::OTYPE>))||(same_as<uHAL::GPIO::OTYPE, uHAL::GPIO::OSPEED>))||(same_as<uHAL::GPIO::OTYPE, uHAL::GPIO::PUPD>)
+                0x0800045e                void set_property_enum<uHAL::GPIO::OTYPE>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::OTYPE)
+ .text._Z17set_property_enumIN4uHAL4GPIO6OSPEEDEQoooooo7same_asIT_NS1_4MODEEE7same_asIS3_NS1_5OTYPEEE7same_asIS3_S2_E7same_asIS3_NS1_4PUPDEEEvNS1_4PORTEtS3_
+                0x08000504       0xa2 /tmp/cc92FVPV.o
+                0x08000504                void set_property_enum<uHAL::GPIO::OSPEED>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::OSPEED)
+                0x08000504                void set_property_enum<uHAL::GPIO::OSPEED>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::OSPEED) requires (((same_as<uHAL::GPIO::OSPEED, uHAL::GPIO::MODE>)||(same_as<uHAL::GPIO::OSPEED, uHAL::GPIO::OTYPE>))||(same_as<uHAL::GPIO::OSPEED, uHAL::GPIO::OSPEED>))||(same_as<uHAL::GPIO::OSPEED, uHAL::GPIO::PUPD>)
+ .text._Z17set_property_enumIN4uHAL4GPIO4PUPDEQoooooo7same_asIT_NS1_4MODEEE7same_asIS3_NS1_5OTYPEEE7same_asIS3_NS1_6OSPEEDEE7same_asIS3_S2_EEvNS1_4PORTEtS3_
+                0x080005a6       0xa2 /tmp/cc92FVPV.o
+                0x080005a6                void set_property_enum<uHAL::GPIO::PUPD>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::PUPD)
+                0x080005a6                void set_property_enum<uHAL::GPIO::PUPD>(uHAL::GPIO::PORT, unsigned short, uHAL::GPIO::PUPD) requires (((same_as<uHAL::GPIO::PUPD, uHAL::GPIO::MODE>)||(same_as<uHAL::GPIO::PUPD, uHAL::GPIO::OTYPE>))||(same_as<uHAL::GPIO::PUPD, uHAL::GPIO::OSPEED>))||(same_as<uHAL::GPIO::PUPD, uHAL::GPIO::PUPD>)
+ .text._ZSt13to_underlyingIN4uHAL4GPIO4MODEEENSt15underlying_typeIT_E4typeES4_
+                0x08000648       0x14 /tmp/cc92FVPV.o
+                0x08000648                std::underlying_type<uHAL::GPIO::MODE>::type std::to_underlying<uHAL::GPIO::MODE>(uHAL::GPIO::MODE)
+ .text._ZSt13to_underlyingIN4uHAL4GPIO5OTYPEEENSt15underlying_typeIT_E4typeES4_
+                0x0800065c       0x14 /tmp/cc92FVPV.o
+                0x0800065c                std::underlying_type<uHAL::GPIO::OTYPE>::type std::to_underlying<uHAL::GPIO::OTYPE>(uHAL::GPIO::OTYPE)
+ .text._ZSt13to_underlyingIN4uHAL4GPIO6OSPEEDEENSt15underlying_typeIT_E4typeES4_
+                0x08000670       0x14 /tmp/cc92FVPV.o
+                0x08000670                std::underlying_type<uHAL::GPIO::OSPEED>::type std::to_underlying<uHAL::GPIO::OSPEED>(uHAL::GPIO::OSPEED)
+ .text._ZSt13to_underlyingIN4uHAL4GPIO4PUPDEENSt15underlying_typeIT_E4typeES4_
+                0x08000684       0x14 /tmp/cc92FVPV.o
+                0x08000684                std::underlying_type<uHAL::GPIO::PUPD>::type std::to_underlying<uHAL::GPIO::PUPD>(uHAL::GPIO::PUPD)
+ .text._ZN4uHAL12LL_write_regERVmmm
+                0x08000698       0x34 /tmp/cc9Hwr5R.o
+                0x08000698                uHAL::LL_write_reg(unsigned long volatile&, unsigned long, unsigned long)
+ .text._ZN4uHAL12LL_write_regERVmm
+                0x080006cc       0x1a /tmp/cc9Hwr5R.o
+                0x080006cc                uHAL::LL_write_reg(unsigned long volatile&, unsigned long)
+ .text._ZNKL17_systick_callbackMUlvE_clEv
+                0x080006e6       0x12 /tmp/cc9Hwr5R.o
+ .text._ZNL17_systick_callbackMUlvE_4_FUNEv
+                0x080006f8        0xc /tmp/cc9Hwr5R.o
+ .text._ZNK4uHAL7systick4initEv
+                0x08000704       0x74 /tmp/cc9Hwr5R.o
+                0x08000704                uHAL::systick::init() const
+ .text._ZN4uHAL7systick9period_msEmPFvvE
+                0x08000778       0x44 /tmp/cc9Hwr5R.o
+                0x08000778                uHAL::systick::period_ms(unsigned long, void (*)())
  .text._Z19systick_irq_handlerv
-                0x08000768        0xc /tmp/cc71MOn3.o
-                0x08000768                systick_irq_handler()
- .text._ZN4uHAL7systick12set_propertyImEEvT_
-                0x08000774       0x38 /tmp/cc71MOn3.o
-                0x08000774                void uHAL::systick::set_property<unsigned long>(unsigned long)
- .text._ZN4uHAL7systick12set_propertyINS0_9CLKSOURCEEEEvT_
-                0x080007ac       0x48 /tmp/cc71MOn3.o
-                0x080007ac                void uHAL::systick::set_property<uHAL::systick::CLKSOURCE>(uHAL::systick::CLKSOURCE)
- .text._ZN4uHAL7systick12set_propertyINS0_7TICKINTEEEvT_
-                0x080007f4       0x48 /tmp/cc71MOn3.o
-                0x080007f4                void uHAL::systick::set_property<uHAL::systick::TICKINT>(uHAL::systick::TICKINT)
- .text._ZN4uHAL7systick12set_propertyINS0_6ENABLEEEEvT_
-                0x0800083c       0x48 /tmp/cc71MOn3.o
-                0x0800083c                void uHAL::systick::set_property<uHAL::systick::ENABLE>(uHAL::systick::ENABLE)
+                0x080007bc       0x14 /tmp/cc9Hwr5R.o
+                0x080007bc                systick_irq_handler()
+ .text._Z17set_property_enumIN4uHAL7systick9CLKSOURCEEQoooo7same_asIT_S2_E7same_asIS3_NS1_7TICKINTEE7same_asIS3_NS1_6ENABLEEEEvS3_
+                0x080007d0       0x40 /tmp/cc9Hwr5R.o
+                0x080007d0                void set_property_enum<uHAL::systick::CLKSOURCE>(uHAL::systick::CLKSOURCE) requires ((same_as<uHAL::systick::CLKSOURCE, uHAL::systick::CLKSOURCE>)||(same_as<uHAL::systick::CLKSOURCE, uHAL::systick::TICKINT>))||(same_as<uHAL::systick::CLKSOURCE, uHAL::systick::ENABLE>)
+                0x080007d0                void set_property_enum<uHAL::systick::CLKSOURCE>(uHAL::systick::CLKSOURCE)
+ .text._Z17set_property_enumIN4uHAL7systick7TICKINTEQoooo7same_asIT_NS1_9CLKSOURCEEE7same_asIS3_S2_E7same_asIS3_NS1_6ENABLEEEEvS3_
+                0x08000810       0x40 /tmp/cc9Hwr5R.o
+                0x08000810                void set_property_enum<uHAL::systick::TICKINT>(uHAL::systick::TICKINT) requires ((same_as<uHAL::systick::TICKINT, uHAL::systick::CLKSOURCE>)||(same_as<uHAL::systick::TICKINT, uHAL::systick::TICKINT>))||(same_as<uHAL::systick::TICKINT, uHAL::systick::ENABLE>)
+                0x08000810                void set_property_enum<uHAL::systick::TICKINT>(uHAL::systick::TICKINT)
+ .text._Z17set_property_enumIN4uHAL7systick6ENABLEEQoooo7same_asIT_NS1_9CLKSOURCEEE7same_asIS3_NS1_7TICKINTEE7same_asIS3_S2_EEvS3_
+                0x08000850       0x3c /tmp/cc9Hwr5R.o
+                0x08000850                void set_property_enum<uHAL::systick::ENABLE>(uHAL::systick::ENABLE) requires ((same_as<uHAL::systick::ENABLE, uHAL::systick::CLKSOURCE>)||(same_as<uHAL::systick::ENABLE, uHAL::systick::TICKINT>))||(same_as<uHAL::systick::ENABLE, uHAL::systick::ENABLE>)
+                0x08000850                void set_property_enum<uHAL::systick::ENABLE>(uHAL::systick::ENABLE)
  .text._ZSt13to_underlyingIN4uHAL7systick9CLKSOURCEEENSt15underlying_typeIT_E4typeES4_
-                0x08000884       0x14 /tmp/cc71MOn3.o
-                0x08000884                std::underlying_type<uHAL::systick::CLKSOURCE>::type std::to_underlying<uHAL::systick::CLKSOURCE>(uHAL::systick::CLKSOURCE)
+                0x0800088c       0x14 /tmp/cc9Hwr5R.o
+                0x0800088c                std::underlying_type<uHAL::systick::CLKSOURCE>::type std::to_underlying<uHAL::systick::CLKSOURCE>(uHAL::systick::CLKSOURCE)
  .text._ZSt13to_underlyingIN4uHAL7systick7TICKINTEENSt15underlying_typeIT_E4typeES4_
-                0x08000898       0x14 /tmp/cc71MOn3.o
-                0x08000898                std::underlying_type<uHAL::systick::TICKINT>::type std::to_underlying<uHAL::systick::TICKINT>(uHAL::systick::TICKINT)
+                0x080008a0       0x14 /tmp/cc9Hwr5R.o
+                0x080008a0                std::underlying_type<uHAL::systick::TICKINT>::type std::to_underlying<uHAL::systick::TICKINT>(uHAL::systick::TICKINT)
  .text._ZSt13to_underlyingIN4uHAL7systick6ENABLEEENSt15underlying_typeIT_E4typeES4_
-                0x080008ac       0x14 /tmp/cc71MOn3.o
-                0x080008ac                std::underlying_type<uHAL::systick::ENABLE>::type std::to_underlying<uHAL::systick::ENABLE>(uHAL::systick::ENABLE)
+                0x080008b4       0x14 /tmp/cc9Hwr5R.o
+                0x080008b4                std::underlying_type<uHAL::systick::ENABLE>::type std::to_underlying<uHAL::systick::ENABLE>(uHAL::systick::ENABLE)
 
-.glue_7         0x080008c0        0x0
- .glue_7        0x080008c0        0x0 linker stubs
+.glue_7         0x080008c8        0x0
+ .glue_7        0x080008c8        0x0 linker stubs
 
-.glue_7t        0x080008c0        0x0
- .glue_7t       0x080008c0        0x0 linker stubs
+.glue_7t        0x080008c8        0x0
+ .glue_7t       0x080008c8        0x0 linker stubs
 
-.vfp11_veneer   0x080008c0        0x0
- .vfp11_veneer  0x080008c0        0x0 linker stubs
+.vfp11_veneer   0x080008c8        0x0
+ .vfp11_veneer  0x080008c8        0x0 linker stubs
 
-.v4_bx          0x080008c0        0x0
- .v4_bx         0x080008c0        0x0 linker stubs
+.v4_bx          0x080008c8        0x0
+ .v4_bx         0x080008c8        0x0 linker stubs
 
-.iplt           0x080008c0        0x0
- .iplt          0x080008c0        0x0 /tmp/ccB7FCUx.o
+.iplt           0x080008c8        0x0
+ .iplt          0x080008c8        0x0 /tmp/ccFsFqng.o
 
-.rel.dyn        0x080008c0        0x0
- .rel.iplt      0x080008c0        0x0 /tmp/ccB7FCUx.o
+.rel.dyn        0x080008c8        0x0
+ .rel.iplt      0x080008c8        0x0 /tmp/ccFsFqng.o
 
 .rodata
  *(.rodata*)
 
-.data           0x20000000        0x0 load address 0x080008c0
+.data           0x20000000        0x4 load address 0x080008c8
                 0x20000000                        _sdata = .
  *(.first_data)
  *(.data SORT_BY_NAME(.data.*))
-                0x20000000                        _edata = .
-                0x080008c0                        _sidata = LOADADDR (.data)
+ .data._ZL17_systick_callback
+                0x20000000        0x4 /tmp/cc9Hwr5R.o
+                0x20000004                        _edata = .
+                0x080008c8                        _sidata = LOADADDR (.data)
 
-.igot.plt       0x20000000        0x0 load address 0x080008c0
- .igot.plt      0x20000000        0x0 /tmp/ccB7FCUx.o
+.igot.plt       0x20000004        0x0 load address 0x080008cc
+ .igot.plt      0x20000004        0x0 /tmp/ccFsFqng.o
 
-.bss            0x20000000        0x0 load address 0x080008c0
-                0x20000000                        _sbss = .
+.bss            0x20000004        0x0 load address 0x080008cc
+                0x20000004                        _sbss = .
  *(.bss SORT_BY_NAME(.bss.*) COMMON)
-                0x20000000                        _ebss = .
-                0x20000000                        . = ALIGN (0x8)
-                0x20000000                        _end = .
+                0x20000004                        _ebss = .
+                0x20000008                        . = ALIGN (0x8)
+                0x20000008                        _end = .
 OUTPUT(build/firmware.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000     0x1bfc
- .debug_info    0x00000000      0x12b /tmp/ccB7FCUx.o
- .debug_info    0x0000012b      0x5d0 /tmp/ccOLmx1u.o
- .debug_info    0x000006fb      0xdb7 /tmp/ccAdcllP.o
- .debug_info    0x000014b2      0x74a /tmp/cc71MOn3.o
+.debug_info     0x00000000     0x1adf
+ .debug_info    0x00000000      0x12b /tmp/ccFsFqng.o
+ .debug_info    0x0000012b      0x56e /tmp/ccDhXCT9.o
+ .debug_info    0x00000699      0xc8a /tmp/cc92FVPV.o
+ .debug_info    0x00001323      0x7bc /tmp/cc9Hwr5R.o
 
-.debug_abbrev   0x00000000      0xa5e
- .debug_abbrev  0x00000000       0xef /tmp/ccB7FCUx.o
- .debug_abbrev  0x000000ef      0x275 /tmp/ccOLmx1u.o
- .debug_abbrev  0x00000364      0x374 /tmp/ccAdcllP.o
- .debug_abbrev  0x000006d8      0x386 /tmp/cc71MOn3.o
+.debug_abbrev   0x00000000      0xa34
+ .debug_abbrev  0x00000000       0xef /tmp/ccFsFqng.o
+ .debug_abbrev  0x000000ef      0x266 /tmp/ccDhXCT9.o
+ .debug_abbrev  0x00000355      0x337 /tmp/cc92FVPV.o
+ .debug_abbrev  0x0000068c      0x3a8 /tmp/cc9Hwr5R.o
 
-.debug_aranges  0x00000000      0x168
+.debug_aranges  0x00000000      0x170
  .debug_aranges
-                0x00000000       0x28 /tmp/ccB7FCUx.o
+                0x00000000       0x28 /tmp/ccFsFqng.o
  .debug_aranges
-                0x00000028       0x28 /tmp/ccOLmx1u.o
+                0x00000028       0x28 /tmp/ccDhXCT9.o
  .debug_aranges
-                0x00000050       0x98 /tmp/ccAdcllP.o
+                0x00000050       0x98 /tmp/cc92FVPV.o
  .debug_aranges
-                0x000000e8       0x80 /tmp/cc71MOn3.o
+                0x000000e8       0x88 /tmp/cc9Hwr5R.o
 
 .debug_rnglists
-                0x00000000       0xff
+                0x00000000      0x105
  .debug_rnglists
-                0x00000000       0x19 /tmp/ccB7FCUx.o
+                0x00000000       0x19 /tmp/ccFsFqng.o
  .debug_rnglists
-                0x00000019       0x19 /tmp/ccOLmx1u.o
+                0x00000019       0x19 /tmp/ccDhXCT9.o
  .debug_rnglists
-                0x00000032       0x72 /tmp/ccAdcllP.o
+                0x00000032       0x72 /tmp/cc92FVPV.o
  .debug_rnglists
-                0x000000a4       0x5b /tmp/cc71MOn3.o
+                0x000000a4       0x61 /tmp/cc9Hwr5R.o
 
-.debug_macro    0x00000000    0x129b2
- .debug_macro   0x00000000       0x11 /tmp/ccB7FCUx.o
- .debug_macro   0x00000011      0xcca /tmp/ccB7FCUx.o
- .debug_macro   0x00000cdb      0x18f /tmp/ccOLmx1u.o
- .debug_macro   0x00000e6a       0x1c /tmp/ccOLmx1u.o
- .debug_macro   0x00000e86       0x22 /tmp/ccOLmx1u.o
- .debug_macro   0x00000ea8       0x56 /tmp/ccOLmx1u.o
- .debug_macro   0x00000efe       0x51 /tmp/ccOLmx1u.o
- .debug_macro   0x00000f4f      0x103 /tmp/ccOLmx1u.o
- .debug_macro   0x00001052       0x6a /tmp/ccOLmx1u.o
- .debug_macro   0x000010bc      0x1df /tmp/ccOLmx1u.o
- .debug_macro   0x0000129b       0x10 /tmp/ccOLmx1u.o
- .debug_macro   0x000012ab      0x22c /tmp/ccOLmx1u.o
- .debug_macro   0x000014d7       0x10 /tmp/ccOLmx1u.o
- .debug_macro   0x000014e7       0xd6 /tmp/ccOLmx1u.o
- .debug_macro   0x000015bd       0xed /tmp/ccOLmx1u.o
- .debug_macro   0x000016aa      0x456 /tmp/ccOLmx1u.o
- .debug_macro   0x00001b00      0xa68 /tmp/ccOLmx1u.o
- .debug_macro   0x00002568       0x9a /tmp/ccOLmx1u.o
- .debug_macro   0x00002602      0xaf8 /tmp/ccOLmx1u.o
- .debug_macro   0x000030fa       0x1f /tmp/ccOLmx1u.o
- .debug_macro   0x00003119       0x10 /tmp/ccOLmx1u.o
- .debug_macro   0x00003129      0x9c3 /tmp/ccOLmx1u.o
- .debug_macro   0x00003aec      0x9b5 /tmp/ccOLmx1u.o
- .debug_macro   0x000044a1       0x12 /tmp/ccOLmx1u.o
- .debug_macro   0x000044b3       0x49 /tmp/ccOLmx1u.o
- .debug_macro   0x000044fc       0x5e /tmp/ccOLmx1u.o
- .debug_macro   0x0000455a      0xa1e /tmp/ccOLmx1u.o
- .debug_macro   0x00004f78       0x2e /tmp/ccOLmx1u.o
- .debug_macro   0x00004fa6       0x10 /tmp/ccOLmx1u.o
- .debug_macro   0x00004fb6     0xb881 /tmp/ccOLmx1u.o
- .debug_macro   0x00010837      0x181 /tmp/ccAdcllP.o
- .debug_macro   0x000109b8      0xaff /tmp/ccAdcllP.o
- .debug_macro   0x000114b7      0x9ca /tmp/ccAdcllP.o
- .debug_macro   0x00011e81      0x9c3 /tmp/ccAdcllP.o
- .debug_macro   0x00012844      0x16e /tmp/cc71MOn3.o
+.debug_macro    0x00000000    0x24108
+ .debug_macro   0x00000000       0x11 /tmp/ccFsFqng.o
+ .debug_macro   0x00000011      0xcca /tmp/ccFsFqng.o
+ .debug_macro   0x00000cdb      0x51f /tmp/ccDhXCT9.o
+ .debug_macro   0x000011fa       0x1c /tmp/ccDhXCT9.o
+ .debug_macro   0x00001216       0x22 /tmp/ccDhXCT9.o
+ .debug_macro   0x00001238       0x56 /tmp/ccDhXCT9.o
+ .debug_macro   0x0000128e       0x51 /tmp/ccDhXCT9.o
+ .debug_macro   0x000012df      0x103 /tmp/ccDhXCT9.o
+ .debug_macro   0x000013e2       0x6a /tmp/ccDhXCT9.o
+ .debug_macro   0x0000144c      0x1df /tmp/ccDhXCT9.o
+ .debug_macro   0x0000162b       0x10 /tmp/ccDhXCT9.o
+ .debug_macro   0x0000163b      0x22c /tmp/ccDhXCT9.o
+ .debug_macro   0x00001867       0x10 /tmp/ccDhXCT9.o
+ .debug_macro   0x00001877       0xd6 /tmp/ccDhXCT9.o
+ .debug_macro   0x0000194d       0xed /tmp/ccDhXCT9.o
+ .debug_macro   0x00001a3a      0x456 /tmp/ccDhXCT9.o
+ .debug_macro   0x00001e90      0xa68 /tmp/ccDhXCT9.o
+ .debug_macro   0x000028f8       0x9a /tmp/ccDhXCT9.o
+ .debug_macro   0x00002992      0xaf8 /tmp/ccDhXCT9.o
+ .debug_macro   0x0000348a       0x1f /tmp/ccDhXCT9.o
+ .debug_macro   0x000034a9       0x10 /tmp/ccDhXCT9.o
+ .debug_macro   0x000034b9      0x9c3 /tmp/ccDhXCT9.o
+ .debug_macro   0x00003e7c      0x9b5 /tmp/ccDhXCT9.o
+ .debug_macro   0x00004831       0x12 /tmp/ccDhXCT9.o
+ .debug_macro   0x00004843       0x49 /tmp/ccDhXCT9.o
+ .debug_macro   0x0000488c       0x5e /tmp/ccDhXCT9.o
+ .debug_macro   0x000048ea      0xa1e /tmp/ccDhXCT9.o
+ .debug_macro   0x00005308       0x2e /tmp/ccDhXCT9.o
+ .debug_macro   0x00005336       0x10 /tmp/ccDhXCT9.o
+ .debug_macro   0x00005346     0xb881 /tmp/ccDhXCT9.o
+ .debug_macro   0x00010bc7       0x12 /tmp/ccDhXCT9.o
+ .debug_macro   0x00010bd9       0x1c /tmp/ccDhXCT9.o
+ .debug_macro   0x00010bf5      0x961 /tmp/ccDhXCT9.o
+ .debug_macro   0x00011556       0x12 /tmp/ccDhXCT9.o
+ .debug_macro   0x00011568       0x1c /tmp/ccDhXCT9.o
+ .debug_macro   0x00011584       0x28 /tmp/ccDhXCT9.o
+ .debug_macro   0x000115ac       0x2e /tmp/ccDhXCT9.o
+ .debug_macro   0x000115da       0x12 /tmp/ccDhXCT9.o
+ .debug_macro   0x000115ec       0x10 /tmp/ccDhXCT9.o
+ .debug_macro   0x000115fc      0x93e /tmp/ccDhXCT9.o
+ .debug_macro   0x00011f3a       0x12 /tmp/ccDhXCT9.o
+ .debug_macro   0x00011f4c      0x930 /tmp/ccDhXCT9.o
+ .debug_macro   0x0001287c       0x34 /tmp/ccDhXCT9.o
+ .debug_macro   0x000128b0      0x945 /tmp/ccDhXCT9.o
+ .debug_macro   0x000131f5       0x11 /tmp/ccDhXCT9.o
+ .debug_macro   0x00013206       0x22 /tmp/ccDhXCT9.o
+ .debug_macro   0x00013228       0x10 /tmp/ccDhXCT9.o
+ .debug_macro   0x00013238      0x922 /tmp/ccDhXCT9.o
+ .debug_macro   0x00013b5a       0x88 /tmp/ccDhXCT9.o
+ .debug_macro   0x00013be2       0x28 /tmp/ccDhXCT9.o
+ .debug_macro   0x00013c0a      0x937 /tmp/ccDhXCT9.o
+ .debug_macro   0x00014541       0x2e /tmp/ccDhXCT9.o
+ .debug_macro   0x0001456f       0x32 /tmp/ccDhXCT9.o
+ .debug_macro   0x000145a1      0x8f1 /tmp/ccDhXCT9.o
+ .debug_macro   0x00014e92       0x34 /tmp/ccDhXCT9.o
+ .debug_macro   0x00014ec6      0x921 /tmp/ccDhXCT9.o
+ .debug_macro   0x000157e7       0x28 /tmp/ccDhXCT9.o
+ .debug_macro   0x0001580f      0x197 /tmp/ccDhXCT9.o
+ .debug_macro   0x000159a6      0x8c8 /tmp/ccDhXCT9.o
+ .debug_macro   0x0001626e      0x8ba /tmp/ccDhXCT9.o
+ .debug_macro   0x00016b28       0x27 /tmp/ccDhXCT9.o
+ .debug_macro   0x00016b4f       0x10 /tmp/ccDhXCT9.o
+ .debug_macro   0x00016b5f       0x26 /tmp/ccDhXCT9.o
+ .debug_macro   0x00016b85       0x2e /tmp/ccDhXCT9.o
+ .debug_macro   0x00016bb3      0x8c7 /tmp/ccDhXCT9.o
+ .debug_macro   0x0001747a       0x22 /tmp/ccDhXCT9.o
+ .debug_macro   0x0001749c      0x8c2 /tmp/ccDhXCT9.o
+ .debug_macro   0x00017d5e      0x898 /tmp/ccDhXCT9.o
+ .debug_macro   0x000185f6       0x38 /tmp/ccDhXCT9.o
+ .debug_macro   0x0001862e       0x32 /tmp/ccDhXCT9.o
+ .debug_macro   0x00018660       0x32 /tmp/ccDhXCT9.o
+ .debug_macro   0x00018692       0x12 /tmp/ccDhXCT9.o
+ .debug_macro   0x000186a4       0x2c /tmp/ccDhXCT9.o
+ .debug_macro   0x000186d0       0x12 /tmp/ccDhXCT9.o
+ .debug_macro   0x000186e2       0x46 /tmp/ccDhXCT9.o
+ .debug_macro   0x00018728      0x8de /tmp/ccDhXCT9.o
+ .debug_macro   0x00019006       0x2e /tmp/ccDhXCT9.o
+ .debug_macro   0x00019034      0x181 /tmp/cc92FVPV.o
+ .debug_macro   0x000191b5      0xaff /tmp/cc92FVPV.o
+ .debug_macro   0x00019cb4      0x9ca /tmp/cc92FVPV.o
+ .debug_macro   0x0001a67e      0x9c3 /tmp/cc92FVPV.o
+ .debug_macro   0x0001b041      0x4fe /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001b53f       0x19 /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001b558      0x9ca /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001bf22       0x4f /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001bf71      0x9a7 /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001c918      0x999 /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001d2b1      0x9d1 /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001dc82      0x968 /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001e5ea      0x97d /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001ef67      0x937 /tmp/cc9Hwr5R.o
+ .debug_macro   0x0001f89e      0x967 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00020205      0x90e /tmp/cc9Hwr5R.o
+ .debug_macro   0x00020b13      0x900 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00021413      0x90d /tmp/cc9Hwr5R.o
+ .debug_macro   0x00021d20      0x908 /tmp/cc9Hwr5R.o
+ .debug_macro   0x00022628      0x8de /tmp/cc9Hwr5R.o
+ .debug_macro   0x00022f06      0x924 /tmp/cc9Hwr5R.o
+ .debug_macro   0x0002382a      0x8de /tmp/cc9Hwr5R.o
 
-.debug_line     0x00000000     0x10bc
- .debug_line    0x00000000       0xa0 /tmp/ccB7FCUx.o
- .debug_line    0x000000a0      0x3b7 /tmp/ccOLmx1u.o
- .debug_line    0x00000457      0x6e1 /tmp/ccAdcllP.o
- .debug_line    0x00000b38      0x584 /tmp/cc71MOn3.o
+.debug_line     0x00000000     0x19e9
+ .debug_line    0x00000000       0xa0 /tmp/ccFsFqng.o
+ .debug_line    0x000000a0      0x836 /tmp/ccDhXCT9.o
+ .debug_line    0x000008d6      0x749 /tmp/cc92FVPV.o
+ .debug_line    0x0000101f      0x9ca /tmp/cc9Hwr5R.o
 
-.debug_str      0x00000000    0x5015a
- .debug_str     0x00000000    0x5015a /tmp/ccB7FCUx.o
+.debug_str      0x00000000    0x52c92
+ .debug_str     0x00000000    0x52c92 /tmp/ccFsFqng.o
                                0x38b8 (size before relaxing)
- .debug_str     0x0005015a        0x0 /tmp/ccOLmx1u.o
-                              0x4f914 (size before relaxing)
- .debug_str     0x0005015a        0x0 /tmp/ccAdcllP.o
-                              0x4fd4b (size before relaxing)
- .debug_str     0x0005015a        0x0 /tmp/cc71MOn3.o
-                               0xb7be (size before relaxing)
+ .debug_str     0x00052c92        0x0 /tmp/ccDhXCT9.o
+                              0x522a8 (size before relaxing)
+ .debug_str     0x00052c92        0x0 /tmp/cc92FVPV.o
+                              0x4fe3f (size before relaxing)
+ .debug_str     0x00052c92        0x0 /tmp/cc9Hwr5R.o
+                               0xe2c4 (size before relaxing)
 
 .comment        0x00000000       0x45
- .comment       0x00000000       0x45 /tmp/ccB7FCUx.o
+ .comment       0x00000000       0x45 /tmp/ccFsFqng.o
                                  0x46 (size before relaxing)
- .comment       0x00000045        0x0 /tmp/ccOLmx1u.o
+ .comment       0x00000045        0x0 /tmp/ccDhXCT9.o
                                  0x46 (size before relaxing)
- .comment       0x00000045        0x0 /tmp/ccAdcllP.o
+ .comment       0x00000045        0x0 /tmp/cc92FVPV.o
                                  0x46 (size before relaxing)
- .comment       0x00000045        0x0 /tmp/cc71MOn3.o
+ .comment       0x00000045        0x0 /tmp/cc9Hwr5R.o
                                  0x46 (size before relaxing)
 
 .ARM.attributes
                 0x00000000       0x34
  .ARM.attributes
-                0x00000000       0x34 /tmp/ccB7FCUx.o
+                0x00000000       0x34 /tmp/ccFsFqng.o
  .ARM.attributes
-                0x00000034       0x34 /tmp/ccOLmx1u.o
+                0x00000034       0x34 /tmp/ccDhXCT9.o
  .ARM.attributes
-                0x00000068       0x34 /tmp/ccAdcllP.o
+                0x00000068       0x34 /tmp/cc92FVPV.o
  .ARM.attributes
-                0x0000009c       0x34 /tmp/cc71MOn3.o
+                0x0000009c       0x34 /tmp/cc9Hwr5R.o
 
-.debug_frame    0x00000000      0x4e8
- .debug_frame   0x00000000       0x40 /tmp/ccB7FCUx.o
- .debug_frame   0x00000040       0x50 /tmp/ccOLmx1u.o
- .debug_frame   0x00000090      0x268 /tmp/ccAdcllP.o
- .debug_frame   0x000002f8      0x1f0 /tmp/cc71MOn3.o
+.debug_frame    0x00000000      0x520
+ .debug_frame   0x00000000       0x40 /tmp/ccFsFqng.o
+ .debug_frame   0x00000040       0x4c /tmp/ccDhXCT9.o
+ .debug_frame   0x0000008c      0x27c /tmp/cc92FVPV.o
+ .debug_frame   0x00000308      0x218 /tmp/cc9Hwr5R.o

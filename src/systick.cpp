@@ -1,40 +1,62 @@
+#include <functional>
+
 #include "uHAL/systick.hpp"
 
 using uHAL::systick;
 
-systick::systick(tick_t reload, CLKSOURCE clock_source, TICKINT irq, ENABLE en):
-    _reload(reload & RELOAD_MAX),
-    _clock_source(clock_source),
-    _irq(irq),
-    _enabled(en)
-{}
+static uHAL::systick::callback_t _systick_callback = []() {
+    // empty
+    (void)0;
+};
 
-// todo remove hardcoded values
-void systick::configure(){
-    set_property(_reload);
-    SYSTICK->VAL = 0;
-    set_property(_clock_source);
-    set_property(_irq);
-    SYSTICK->CALIB |= _TENMS & (BIT(24) - 1);
-    // this must be last
-    set_property(_enabled);
+template<typename T>
+    requires
+    std::same_as<T, systick::CLKSOURCE> ||
+    std::same_as<T, systick::TICKINT> ||
+    std::same_as<T, systick::ENABLE>
+void set_property_enum(T prop) {
+    
+    uint8_t mask_len = 0; // std::same_as<T, systick::ENABLE>
+    if constexpr (std::same_as<T, systick::TICKINT>) {
+        mask_len = 1;
+    }
+    else if constexpr (std::same_as<T, systick::CLKSOURCE>) {
+        mask_len = 2;
+    }
+
+    const uint32_t data = std::to_underlying(prop) << mask_len;
+    uHAL::LL_write_reg(SYSTICK->CTRL, data, uHAL::BIT(mask_len));
 }
 
-systick systick::period_ms(uint32_t ms){
-    uint64_t reload = ms * 16000000 / 1000; // todo
+// todo remove hardcoded values
+void systick::init() const {
+    _systick_callback = _callback;
+
+    LL_write_reg(SYSTICK->LOAD, _reload, systick::RELOAD_MAX);
+
+    LL_write_reg(SYSTICK->VAL, 0);
+
+    set_property_enum(_clock_source);
+    set_property_enum(_irq);
+    
+    LL_write_reg(SYSTICK->CALIB, _TENMS, BIT(24) - 1);
+
+    // this must be last
+    set_property_enum(_enabled);
+}
+
+systick systick::period_ms(uint32_t ms, callback_t cb){
+    uint32_t reload = ms * 16000; // todo cpu clock of 16MHz by default
 
     return systick{
         static_cast<uint32_t>(reload) & RELOAD_MAX, 
-        CLKSOURCE::AHB_8, 
-        TICKINT::IRQ_ENABLED,
-        ENABLE::SYSTICK_ENABLED
+        CLKSOURCE::AHB,
+        TICKINT::IRQ_ENABLE,
+        ENABLE::SYSTICK_ENABLE,
+        cb
     };
 }
 
-__attribute__((weak)) void uHAL::systick::callback(void){
-    // EMPTY
-}
-
 void systick_irq_handler(void){
-    uHAL::systick::callback();
+    _systick_callback();
 }

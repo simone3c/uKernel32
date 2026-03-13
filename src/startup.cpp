@@ -1,5 +1,6 @@
 __attribute((weak)) void systick_irq_handler(void){
     // EMPTY
+    (void)0;
 }
 
 extern "C"{
@@ -20,9 +21,6 @@ __attribute__((naked, noreturn)) void _reset(void) {
     
     for (;;) (void)0;  // Infinite loop - should never be reached
 }
-
-
-
 
 // 16 standard and 91 STM32-specific handlers
 __attribute__((section(".vectors"))) void (*const tab[16 + 91])(void) = {
