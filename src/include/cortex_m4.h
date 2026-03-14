@@ -18,6 +18,6 @@ typedef struct {
 // -----------------------------------------
 // ---- MEMORY MAPPED PERIPHERALS ADDRESS ----
 
-#define SYSTICK ((systick_typedef*)0xE000E010)
+#define SYSTICK (0xE000E010)
 
 #endif

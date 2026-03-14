@@ -3,46 +3,104 @@
 #include "uHAL/systick.hpp"
 
 using uHAL::systick;
+using uHAL::LL_register;
+
+template<typename T>
+concept ctrl_property = 
+    std::same_as<T, systick::CLKSOURCE> ||
+    std::same_as<T, systick::TICKINT> ||
+    std::same_as<T, systick::ENABLE>;
+
+template<typename T>
+concept calib_property = 
+    std::is_integral_v<T>; // for TENMS
+// todo add the missing calib properties
+    
 
 static uHAL::systick::callback_t _systick_callback = []() {
     // empty
     (void)0;
 };
+static constexpr systick::tick_t RELOAD_MAX = 0x00FFFFFF; // max 24 bits
 
-template<typename T>
-    requires
-    std::same_as<T, systick::CLKSOURCE> ||
-    std::same_as<T, systick::TICKINT> ||
-    std::same_as<T, systick::ENABLE>
-void set_property_enum(T prop) {
+struct ctrl_reg{
+    static constexpr LL_register<SYSTICK> reg{};
+
+    template<ctrl_property T>
+    static void set_property(T prop) {
     
-    uint8_t mask_len = 0; // std::same_as<T, systick::ENABLE>
-    if constexpr (std::same_as<T, systick::TICKINT>) {
-        mask_len = 1;
-    }
-    else if constexpr (std::same_as<T, systick::CLKSOURCE>) {
-        mask_len = 2;
-    }
+        uint8_t mask_len = 0; // std::same_as<T, systick::ENABLE>
+        if constexpr (std::same_as<T, systick::TICKINT>) {
+            mask_len = 1;
+        }
+        if constexpr (std::same_as<T, systick::CLKSOURCE>) {
+            mask_len = 2;
+        }
 
-    const uint32_t data = std::to_underlying(prop) << mask_len;
-    uHAL::LL_write_reg(SYSTICK->CTRL, data, uHAL::BIT(mask_len));
-}
+        const uint32_t data = std::to_underlying(prop) << mask_len;
+        reg.set(data, uHAL::BIT(mask_len));
+    }
+};
+
+struct load_reg{
+    static constexpr LL_register<SYSTICK + 4> reg{};
+
+    static inline void set_reload(systick::tick_t reload) {
+        reg.set(reload, RELOAD_MAX);
+    }
+};
+
+struct val_reg{
+    static constexpr LL_register<SYSTICK + 8> reg{};
+
+    static inline void set_reload(systick::tick_t value) {
+        reg.set(value, RELOAD_MAX);
+    }
+};
+
+struct calib_reg{
+    static constexpr LL_register<SYSTICK + 12> reg{};
+
+    template<calib_property T>
+    static void set_property(T prop) {
+    
+        uint32_t mask = 0;
+        uint32_t data = 0;
+        if constexpr (std::is_integral_v<T>) {
+            mask = uHAL::BIT(24) - 1;
+            data = prop;
+        }
+
+        reg.set(data, mask);
+    }
+};
+
+// --- methods ---
+
+systick::systick(tick_t ticks, CLKSOURCE clk, TICKINT irq, ENABLE en, callback_t cb):
+    _reload(ticks),
+    _clock_source(clk),
+    _irq(irq),
+    _enabled(en),
+    _callback(cb)
+{}
+
 
 // todo remove hardcoded values
 void systick::init() const {
     _systick_callback = _callback;
 
-    LL_write_reg(SYSTICK->LOAD, _reload, systick::RELOAD_MAX);
+    load_reg::set_reload(_reload);
 
-    LL_write_reg(SYSTICK->VAL, 0);
+    val_reg::set_reload(0);
 
-    set_property_enum(_clock_source);
-    set_property_enum(_irq);
+    ctrl_reg::set_property(_clock_source);
+    ctrl_reg::set_property(_irq);
     
-    LL_write_reg(SYSTICK->CALIB, _TENMS, BIT(24) - 1);
+    calib_reg::set_property(_TENMS);
 
     // this must be last
-    set_property_enum(_enabled);
+    ctrl_reg::set_property(_enabled); // todo make it independent to allow for postponed activation
 }
 
 systick systick::period_ms(uint32_t ms, callback_t cb){
