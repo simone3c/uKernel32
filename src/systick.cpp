@@ -10,13 +10,7 @@ concept ctrl_property =
     std::same_as<T, systick::CLKSOURCE> ||
     std::same_as<T, systick::TICKINT> ||
     std::same_as<T, systick::ENABLE>;
-
-template<typename T>
-concept calib_property = 
-    std::is_integral_v<T>; // for TENMS
-// todo add the missing calib properties
     
-
 static uHAL::systick::callback_t _systick_callback = []() {
     // empty
     (void)0;
@@ -58,35 +52,15 @@ struct val_reg{
     }
 };
 
-struct calib_reg{
-    static constexpr LL_register<SYSTICK + 12> reg{};
-
-    template<calib_property T>
-    static void set_property(T prop) {
-    
-        uint32_t mask = 0;
-        uint32_t data = 0;
-        if constexpr (std::is_integral_v<T>) {
-            mask = uHAL::BIT(24) - 1;
-            data = prop;
-        }
-
-        reg.set(data, mask);
-    }
-};
-
 // --- methods ---
 
-systick::systick(tick_t ticks, CLKSOURCE clk, TICKINT irq, ENABLE en, callback_t cb):
+systick::systick(tick_t ticks, CLKSOURCE clk, TICKINT irq, callback_t cb):
     _reload(ticks),
     _clock_source(clk),
     _irq(irq),
-    _enabled(en),
     _callback(cb)
 {}
 
-
-// todo remove hardcoded values
 void systick::init() const {
     _systick_callback = _callback;
 
@@ -96,11 +70,8 @@ void systick::init() const {
 
     ctrl_reg::set_property(_clock_source);
     ctrl_reg::set_property(_irq);
-    
-    calib_reg::set_property(_TENMS);
-
     // this must be last
-    ctrl_reg::set_property(_enabled); // todo make it independent to allow for postponed activation
+    ctrl_reg::set_property(ENABLE::SYSTICK_DISABLE);
 }
 
 systick systick::period_ms(uint32_t ms, callback_t cb){
@@ -110,9 +81,12 @@ systick systick::period_ms(uint32_t ms, callback_t cb){
         static_cast<uint32_t>(reload) & RELOAD_MAX, 
         CLKSOURCE::AHB,
         TICKINT::IRQ_ENABLE,
-        ENABLE::SYSTICK_ENABLE,
         cb
     };
+}
+
+void systick::turn_on_off(ENABLE status){
+    ctrl_reg::set_property(status);
 }
 
 void systick_irq_handler(void){
