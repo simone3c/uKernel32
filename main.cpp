@@ -19,8 +19,6 @@ int main(void) {
 
     auto sys = uHAL::systick::period_ms(100, systick_cb);
     sys.init();
-    sys.turn_on_off(uHAL::systick::ENABLE::SYSTICK_ENABLE);
-
 
     while(4){
         // uHAL::GPIO::toggle_level(uHAL::GPIO::PORT::A, uHAL::GPIO::PIN<5>);

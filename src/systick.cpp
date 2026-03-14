@@ -11,11 +11,14 @@ concept ctrl_property =
     std::same_as<T, systick::TICKINT> ||
     std::same_as<T, systick::ENABLE>;
     
+static constexpr systick::tick_t RELOAD_MAX = 0x00FFFFFF; // max 24 bits
 static uHAL::systick::callback_t _systick_callback = []() {
     // empty
     (void)0;
 };
-static constexpr systick::tick_t RELOAD_MAX = 0x00FFFFFF; // max 24 bits
+void systick_irq_handler(void){
+    _systick_callback();
+}
 
 struct ctrl_reg{
     static constexpr LL_register<SYSTICK> reg{};
@@ -47,31 +50,31 @@ struct load_reg{
 struct val_reg{
     static constexpr LL_register<SYSTICK + 8> reg{};
 
-    static inline void set_reload(systick::tick_t value) {
+    static inline void set_val(systick::tick_t value) {
         reg.set(value, RELOAD_MAX);
     }
 };
 
 // --- methods ---
 
-systick::systick(tick_t ticks, CLKSOURCE clk, TICKINT irq, callback_t cb):
-    _reload(ticks),
-    _clock_source(clk),
-    _irq(irq),
-    _callback(cb)
+systick::systick(tick_t ticks, CLKSOURCE clk, TICKINT tickint, callback_t cb):
+    reload(ticks),
+    clock_source(clk),
+    irq(tickint),
+    callback(cb)
 {}
 
 void systick::init() const {
-    _systick_callback = _callback;
+    set_callback(callback);
 
-    load_reg::set_reload(_reload);
+    load_reg::set_reload(reload);
 
-    val_reg::set_reload(0);
+    val_reg::set_val(0);
 
-    ctrl_reg::set_property(_clock_source);
-    ctrl_reg::set_property(_irq);
+    ctrl_reg::set_property(clock_source);
+    ctrl_reg::set_property(irq);
     // this must be last
-    ctrl_reg::set_property(ENABLE::SYSTICK_DISABLE);
+    ctrl_reg::set_property(ENABLE::SYSTICK_ENABLE);
 }
 
 systick systick::period_ms(uint32_t ms, callback_t cb){
@@ -89,6 +92,15 @@ void systick::turn_on_off(ENABLE status){
     ctrl_reg::set_property(status);
 }
 
-void systick_irq_handler(void){
-    _systick_callback();
+void systick::set_reload_value(tick_t ticks){
+    load_reg::set_reload(ticks);
 }
+
+void systick::set_callback(callback_t cb){
+    _systick_callback = cb;
+}
+
+void systick::set_irq_on_off(TICKINT en){
+    ctrl_reg::set_property(en);
+}
+
