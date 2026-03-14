@@ -1,7 +1,7 @@
 #ifndef _uHAL_utils_
 #define _uHAL_utils_
 
-#include <stdint.h>
+#include <cstdint>
 
 namespace uHAL{
 

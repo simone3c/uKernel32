@@ -2,7 +2,7 @@
 #define _CORTEX_M4_
 
 
-
+#include <cstdint>
 
 // --- MEMORY MAPPED PERIPHERALS STRUCT ----
 

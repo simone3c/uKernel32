@@ -17,7 +17,7 @@ int main(void) {
     );
     led.init();
 
-    auto sys = uHAL::systick::period_ms(100, systick_cb);
+    auto sys = uHAL::systick::period_ms(500, systick_cb);
     sys.init();
 
     while(4){

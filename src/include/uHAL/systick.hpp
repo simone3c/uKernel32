@@ -1,13 +1,9 @@
 #ifndef _uHAL_SYSTICK_
 #define _uHAL_SYSTICK_
 
-#include <stdint.h>
-#include <concepts>
-#include <utility>
-#include <functional>
+#include <cstdint>
 
 #include "common.hpp"
-#include "cortex_m4.h"
 
 namespace uHAL{
     

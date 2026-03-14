@@ -1,7 +1,7 @@
 #ifndef _uHAL_GPIO_
 #define _uHAL_GPIO_
 
-#include <stdint.h>
+#include <cstdint>
 #include <concepts>
 #include <utility>
 
