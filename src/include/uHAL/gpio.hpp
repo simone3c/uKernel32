@@ -12,11 +12,12 @@
 namespace uHAL{
 
     struct GPIO{
+        static constexpr short PORT_SZ = 16;
 
         using pin_bitmask_t = uint16_t;
         
         template <unsigned n>
-        requires (n < 16)
+        requires (n < PORT_SZ)
         static constexpr pin_bitmask_t PIN = BIT(n);
 
         pin_bitmask_t _pins;

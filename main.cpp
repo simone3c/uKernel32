@@ -1,5 +1,5 @@
 #include "uHAL/gpio.hpp"
-#include "uHAL/systick.hpp"
+//#include "uHAL/systick.hpp"
 
 static inline void spin(uint32_t count) {
     while (count--) (void)0;
@@ -17,14 +17,14 @@ int main(void) {
     );
     led.init();
 
-    auto sys = uHAL::systick::period_ms(500, systick_cb);
-    sys.init();
+    // auto sys = uHAL::systick::period_ms(500, systick_cb);
+    // sys.init();
 
     while(4){
-        // uHAL::GPIO::toggle_level(uHAL::GPIO::PORT::A, uHAL::GPIO::PIN<5>);
-        // spin(99999);
-        // uHAL::GPIO::toggle_level(uHAL::GPIO::PORT::A, uHAL::GPIO::PIN<5>);
-        // spin(99999);
+        uHAL::GPIO::toggle_level(uHAL::GPIO::PORT::A, uHAL::GPIO::PIN<5>);
+        spin(99999);
+        uHAL::GPIO::toggle_level(uHAL::GPIO::PORT::A, uHAL::GPIO::PIN<5>);
+        spin(99999);
     }
 }
 

@@ -3,8 +3,18 @@
 #include "uHAL/gpio.hpp"
 
 using uHAL::GPIO;
+using uHAL::LL_register;
 
-GPIO_TypeDef* get_port_ptr(GPIO::PORT p) {
+// ---- auxiliary functions ----
+
+template<typename T>
+concept gpio_property = 
+    std::same_as<T, GPIO::MODE> ||
+    std::same_as<T, GPIO::OTYPE> ||
+    std::same_as<T, GPIO::OSPEED> ||
+    std::same_as<T, GPIO::PUPD>;
+
+static GPIO_TypeDef* get_port_ptr(GPIO::PORT p) {
     using enum GPIO::PORT;
 
     switch (p) {
@@ -18,33 +28,15 @@ GPIO_TypeDef* get_port_ptr(GPIO::PORT p) {
     }
 }
 
-template<typename T>
-    requires
-    std::same_as<T, GPIO::MODE> ||
-    std::same_as<T, GPIO::OTYPE> ||
-    std::same_as<T, GPIO::OSPEED> ||
-    std::same_as<T, GPIO::PUPD>
-void set_property_enum(GPIO::PORT p, GPIO::pin_bitmask_t pins, T prop) {
-    GPIO_TypeDef* port_hw = get_port_ptr(p);
-    volatile uint32_t* field_hw = nullptr;
-
+template<gpio_property T>
+static uint32_t calculate_property(GPIO::pin_bitmask_t pins, T prop) {
     uint8_t mask_len = 2;
 
-    if constexpr (std::same_as<T, GPIO::MODE>) {
-        field_hw = &port_hw->MODER;
-    }
-    else if constexpr (std::same_as<T, GPIO::OTYPE>) {
-        field_hw = &port_hw->OTYPER;
+    if constexpr (std::same_as<T, GPIO::OTYPE>) {
         mask_len = 1;
     }
-    else if constexpr (std::same_as<T, GPIO::OSPEED>) {
-        field_hw = &port_hw->OSPEEDR;
-    }
-    else if constexpr (std::same_as<T, GPIO::PUPD>) {
-        field_hw = &port_hw->PUPDR;
-    }
 
-    uint32_t tmp = *field_hw;
+    uint32_t tmp = 0;
     for (unsigned i = 0; i < sizeof(pins) * 8; ++i) {
         if (pins & uHAL::BIT(i)) {
             const uint32_t mask = (1 << mask_len) - 1;
@@ -52,17 +44,70 @@ void set_property_enum(GPIO::PORT p, GPIO::pin_bitmask_t pins, T prop) {
             tmp |= std::to_underlying(prop) << (i * mask_len);
         }
     }
-    *field_hw = tmp;
+    return tmp;
 };
+
+// ---- specific registers abstraction ----
+
+template<uint32_t OFFSET>
+struct property_reg{
+    static constexpr LL_register<GPIOA_BASE + OFFSET> regA{};
+    static constexpr LL_register<GPIOB_BASE + OFFSET> regB{};
+    static constexpr LL_register<GPIOC_BASE + OFFSET> regC{};
+    static constexpr LL_register<GPIOD_BASE + OFFSET> regD{};
+    static constexpr LL_register<GPIOE_BASE + OFFSET> regE{};
+    static constexpr LL_register<GPIOH_BASE + OFFSET> regH{};
+
+    static void set(GPIO::PORT port, GPIO::pin_bitmask_t bitmask, GPIO::MODE m) {
+
+        auto write = [](GPIO::PORT p, GPIO::pin_bitmask_t bm, uint32_t data){
+            using enum GPIO::PORT;
+            switch (p)
+            {
+            case A:
+                regA.set(data, bm);
+                break;
+            case B:
+                regB.set(data, bm);
+                break;
+            case C:
+                regC.set(data, bm);
+                break;
+            case D:
+                regD.set(data, bm);
+                break;
+            case E:
+                regE.set(data, bm);
+                break;
+            case H:
+                regH.set(data, bm);
+                break;
+            default:
+                std::unreachable();
+            }
+        };
+    
+        const uint32_t data = calculate_property(bitmask, m);
+        write(port, bitmask, data);
+    }
+};
+
+using mode_reg = property_reg<0x0>;
+using otype_reg = property_reg<0x4>;
+using ospeed_reg = property_reg<0x8>;
+using pupd_reg = property_reg<0xC>;
+
+
+// ---- methods implementation ----
 
 void GPIO::init() const {
 
     RCC->AHB1ENR |= 1;     // Enable GPIO clock for LED
 
-    set_property_enum(_port, _pins, _mode);
-    set_property_enum(_port, _pins, _otype);
-    set_property_enum(_port, _pins, _ospeed);
-    set_property_enum(_port, _pins, _pupd);
+    mode_reg::set(_port, _pins, _mode);
+    otype_reg::set(_port, _pins, _mode);
+    ospeed_reg::set(_port, _pins, _mode);
+    pupd_reg::set(_port, _pins, _mode);
 }
 
 void GPIO::set_level(bool l) const {
