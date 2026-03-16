@@ -1,25 +1,28 @@
 #include <utility>
 
-#include "cortex_m4.h"
 #include "uHAL/systick.hpp"
+
+#include "uHAL/common.hpp"
+#include "cortex_m4.h"
 
 using uHAL::systick;
 using uHAL::LL_register;
 
 template<typename T>
 concept ctrl_property = 
-    std::same_as<T, systick::CLKSOURCE> ||
-    std::same_as<T, systick::TICKINT> ||
-    std::same_as<T, systick::ENABLE>;
+    std::same_as<T, systick::clksource_t> ||
+    std::same_as<T, systick::tickint_t> ||
+    std::same_as<T, systick::status_t>;
     
 static constexpr systick::tick_t RELOAD_MAX = 0x00FFFFFF; // max 24 bits
-static uHAL::systick::callback_t _systick_callback = []() {
-    // empty
-    (void)0;
-};
-void systick_irq_handler(void){
+
+static uHAL::systick::callback_t _systick_callback = nullptr;
+
+void _systick_irq_handler(void){
     _systick_callback();
 }
+
+// ---- specific registers abstraction ----
 
 struct ctrl_reg{
     static constexpr LL_register<SYSTICK> reg{};
@@ -28,10 +31,10 @@ struct ctrl_reg{
     static void set_property(T prop) {
     
         uint8_t mask_len = 0; // std::same_as<T, systick::ENABLE>
-        if constexpr (std::same_as<T, systick::TICKINT>) {
+        if constexpr (std::same_as<T, systick::tickint_t>) {
             mask_len = 1;
         }
-        if constexpr (std::same_as<T, systick::CLKSOURCE>) {
+        if constexpr (std::same_as<T, systick::clksource_t>) {
             mask_len = 2;
         }
 
@@ -44,7 +47,7 @@ struct load_reg{
     static constexpr LL_register<SYSTICK + 4> reg{};
 
     static inline void set_reload(systick::tick_t reload) {
-        reg.set(reload, RELOAD_MAX);
+        reg.set(RELOAD_MAX, reload);
     }
 };
 
@@ -52,20 +55,13 @@ struct val_reg{
     static constexpr LL_register<SYSTICK + 8> reg{};
 
     static inline void set_val(systick::tick_t value) {
-        reg.set(value, RELOAD_MAX);
+        reg.set(RELOAD_MAX, value);
     }
 };
 
-// --- methods ---
+// ---- methods implementation ----
 
-systick::systick(tick_t ticks, CLKSOURCE clk, TICKINT tickint, callback_t cb):
-    reload(ticks),
-    clock_source(clk),
-    irq(tickint),
-    callback(cb)
-{}
-
-void systick::init() const {
+void systick::apply() const {
     set_callback(callback);
 
     load_reg::set_reload(reload);
@@ -75,21 +71,21 @@ void systick::init() const {
     ctrl_reg::set_property(clock_source);
     ctrl_reg::set_property(irq);
     // this must be last
-    ctrl_reg::set_property(ENABLE::SYSTICK_ENABLE);
+    ctrl_reg::set_property(status_t::enabled);
 }
 
 systick systick::period_ms(uint32_t ms, callback_t cb){
     uint32_t reload = ms * 16000; // todo cpu clock of 16MHz by default
 
     return systick{
-        static_cast<uint32_t>(reload) & RELOAD_MAX, 
-        CLKSOURCE::AHB,
-        TICKINT::IRQ_ENABLE,
-        cb
+        .reload = static_cast<uint32_t>(reload) & RELOAD_MAX, 
+        .clock_source = clksource_t::ahb,
+        .irq = tickint_t::irq_enabled,
+        .callback = cb
     };
 }
 
-void systick::turn_on_off(ENABLE status){
+void systick::turn_on_off(status_t status){
     ctrl_reg::set_property(status);
 }
 
@@ -101,7 +97,7 @@ void systick::set_callback(callback_t cb){
     _systick_callback = cb;
 }
 
-void systick::set_irq_on_off(TICKINT en){
+void systick::set_irq_on_off(tickint_t en){
     ctrl_reg::set_property(en);
 }
 

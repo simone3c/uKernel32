@@ -1,4 +1,4 @@
-__attribute((weak)) void systick_irq_handler(void){
+__attribute((weak)) void _systick_irq_handler(void){
     // EMPTY
     (void)0;
 }
@@ -18,6 +18,14 @@ __attribute__((naked, noreturn)) void _reset(void) {
     for (long *dst = &_sdata, *src = &_sidata; dst < &_edata;) *dst++ = *src++;
 
     // todo static constructors?
+    // extern void(*__fini_array_start)(void);
+    // extern void(*__fini_array_end)(void);
+    // long fini_sz = __fini_array_end - __fini_array_start;
+
+    // for(int i = 0; i < fini_sz; ++i){
+    //     (*(__fini_array_start + i))();
+    // }
+
     
     main();
     
@@ -26,7 +34,7 @@ __attribute__((naked, noreturn)) void _reset(void) {
 
 // 16 standard and 91 STM32-specific handlers
 __attribute__((section(".vectors"))) void (*const tab[16 + 91])(void) = {
-    _estack, _reset, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, systick_irq_handler
+    _estack, _reset, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, _systick_irq_handler
 };
 
 }

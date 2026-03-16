@@ -8,10 +8,56 @@ MEMORY {
 _estack     = ORIGIN(sram) + LENGTH(sram);       /* stack points to end of SRAM */
 
 SECTIONS {
+  /****************************/
+  /*      VECTOR TABLE        */
+  /****************************/
   .vectors  : { KEEP(*(.vectors)) }   > flash
+
+  /****************************/
+  /*      PROGRAM CODE        */
+  /****************************/
   .text     : { *(.text*) }           > flash
+
+  /****************************/
+  /*      CONSTANT DATA       */
+  /****************************/
   .rodata   : { *(.rodata*) }         > flash
 
+  /****************************/
+  /*  GLOB. CONSTRUCTORS PRE  */
+  /****************************/
+  .preinit_array :
+  {
+      PROVIDE_HIDDEN (__preinit_array_start = .);
+      KEEP (*(.preinit_array*))
+      PROVIDE_HIDDEN (__preinit_array_end = .);
+  } > flash
+
+  /****************************/
+  /*    GLOB. CONSTRUCTORS    */
+  /****************************/
+  .init_array :
+  {
+      PROVIDE_HIDDEN (__init_array_start = .);
+      KEEP (*(SORT(.init_array.*)))
+      KEEP (*(.init_array*))
+      PROVIDE_HIDDEN (__init_array_end = .);
+  } > flash
+
+  /****************************/
+  /*     GLOB. DESTRUCTORS    */
+  /****************************/
+  .fini_array :
+  {
+      PROVIDE_HIDDEN (__fini_array_start = .);
+      KEEP (*(SORT(.fini_array.*)))
+      KEEP (*(.fini_array*))
+      PROVIDE_HIDDEN (__fini_array_end = .);
+  } > flash
+
+  /****************************/
+  /*    INITIALIZED DATA      */
+  /****************************/
   .data : {
     _sdata = .;                                  /* .data section start */
     *(.first_data)
@@ -20,6 +66,9 @@ SECTIONS {
   } > sram AT > flash
   _sidata = LOADADDR(.data);
 
+  /****************************/
+  /*   UNINITIALIZED DATA     */
+  /****************************/
   .bss : {
     _sbss = .;                                   /* .bss section start */
     *(.bss SORT(.bss.*) COMMON)

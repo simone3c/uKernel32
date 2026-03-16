@@ -6,7 +6,11 @@ CFLAGS  ?=  -std=c++23 -Isrc/include -W -Wall -Wextra -Wundef -Wshadow -Wdouble-
 
 LDFLAGS ?= -Tstm32f401re.ld -nostartfiles -nostdlib --specs nano.specs -lc -lgcc -Wl,--gc-sections -Wl,-Map=$@.map
 
-SOURCES = src/startup.cpp main.cpp src/gpio.cpp src/systick.cpp
+SOURCES = src/startup.cpp \
+	main.cpp \
+	src/gpio.cpp \
+	src/systick.cpp
+	
 BUILD = build
 
 all: $(BUILD)/firmware.bin
