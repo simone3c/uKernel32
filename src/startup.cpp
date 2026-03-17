@@ -1,3 +1,5 @@
+using func_ptr = void(*)(void);
+
 __attribute((weak)) void _systick_irq_handler(void){
     // EMPTY
     (void)0;
@@ -17,17 +19,25 @@ __attribute__((naked, noreturn)) void _reset(void) {
     
     for (long *dst = &_sdata, *src = &_sidata; dst < &_edata;) *dst++ = *src++;
 
-    // todo static constructors?
-    // extern void(*__fini_array_start)(void);
-    // extern void(*__fini_array_end)(void);
-    // long fini_sz = __fini_array_end - __fini_array_start;
+    extern func_ptr __preinit_array_start[0];
+    extern func_ptr __preinit_array_end[0];
+    for(func_ptr* func = __preinit_array_start; func != __preinit_array_end; ++func){
+        (*func)();
+    }
 
-    // for(int i = 0; i < fini_sz; ++i){
-    //     (*(__fini_array_start + i))();
-    // }
+    extern func_ptr __init_array_start[0];
+    extern func_ptr __init_array_end[0];
+    for(func_ptr* func = __init_array_start; func != __init_array_end; ++func){
+        (*func)();
+    }
 
-    
     main();
+    
+    extern func_ptr __fini_array_start[0];
+    extern func_ptr __fini_array_end[0];
+    for(func_ptr* func = __fini_array_start; func != __fini_array_end; ++func){
+        (*func)();
+    }
     
     for (;;) (void)0;  // Infinite loop - should never be reached
 }
