@@ -28,9 +28,9 @@ SECTIONS {
   /****************************/
   .preinit_array :
   {
-      PROVIDE_HIDDEN (__preinit_array_start = .);
+      _preinit_array_start = .;
       KEEP (*(.preinit_array*))
-      PROVIDE_HIDDEN (__preinit_array_end = .);
+      _preinit_array_end = .;
   } > flash
 
   /****************************/
@@ -38,10 +38,10 @@ SECTIONS {
   /****************************/
   .init_array :
   {
-      PROVIDE_HIDDEN (__init_array_start = .);
+      _init_array_start = .;
       KEEP (*(SORT(.init_array.*)))
       KEEP (*(.init_array*))
-      PROVIDE_HIDDEN (__init_array_end = .);
+      _init_array_end = .;
   } > flash
 
   /****************************/
@@ -49,10 +49,10 @@ SECTIONS {
   /****************************/
   .fini_array :
   {
-      PROVIDE_HIDDEN (__fini_array_start = .);
+      _fini_array_start = .;
       KEEP (*(SORT(.fini_array.*)))
       KEEP (*(.fini_array*))
-      PROVIDE_HIDDEN (__fini_array_end = .);
+      _fini_array_end = .;
   } > flash
 
   /****************************/

@@ -19,23 +19,23 @@ __attribute__((naked, noreturn)) void _reset(void) {
     
     for (long *dst = &_sdata, *src = &_sidata; dst < &_edata;) *dst++ = *src++;
 
-    extern func_ptr __preinit_array_start[0];
-    extern func_ptr __preinit_array_end[0];
-    for(func_ptr* func = __preinit_array_start; func != __preinit_array_end; ++func){
+    extern func_ptr _preinit_array_start[0];
+    extern func_ptr _preinit_array_end[0];
+    for(func_ptr* func = _preinit_array_start; func != _preinit_array_end; ++func){
         (*func)();
     }
 
-    extern func_ptr __init_array_start[0];
-    extern func_ptr __init_array_end[0];
-    for(func_ptr* func = __init_array_start; func != __init_array_end; ++func){
+    extern func_ptr _init_array_start[0];
+    extern func_ptr _init_array_end[0];
+    for(func_ptr* func = _init_array_start; func != _init_array_end; ++func){
         (*func)();
     }
 
     main();
     
-    extern func_ptr __fini_array_start[0];
-    extern func_ptr __fini_array_end[0];
-    for(func_ptr* func = __fini_array_start; func != __fini_array_end; ++func){
+    extern func_ptr _fini_array_start[0];
+    extern func_ptr _fini_array_end[0];
+    for(func_ptr* func = _fini_array_start; func != _fini_array_end; ++func){
         (*func)();
     }
     

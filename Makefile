@@ -1,6 +1,6 @@
 CFLAGS  ?=  -std=c++23 -Isrc/include -W -Wall -Wextra -Wundef -Wshadow -Wdouble-promotion -Wunused \
 	-Wformat-truncation -fno-common -Wconversion \
-	-g3 -O0 -ffunction-sections -fdata-sections -I. \
+	-g3 -Os -ffunction-sections -fdata-sections \
 	-mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 $(EXTRA_CFLAGS) \
 	-fno-rtti -fno-exceptions
 
